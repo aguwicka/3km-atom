@@ -5,7 +5,10 @@
     font-style: normal;
     font-weight: normal;
 }
-
+:root {
+    --red-title: #E62900;
+    --gray-title: #ABABAB;
+}
 html {
     background-color: #fff;
 }
@@ -1137,6 +1140,116 @@ input {
 }
 .service {
     position: relative;
+}
+.equipment-title {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+}
+.equipment-title h2{
+    color: var(--red-title);
+    font-family: Gilroy;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 83.49px;
+    text-align: left;
+
+}
+.equipment-title span {
+    font-family: Roboto Flex;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 31px;
+    text-align: right;
+    color: #fff;
+    max-width: 885px;
+
+}
+.bg-black {
+    background-color: #000;
+    border: 1px solid black;
+}
+.equipment-body {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.line-page.table-block h2{
+    color: var(--red-title);   
+    font-family: Gilroy;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 83.49px;
+    text-align: left;
+
+}
+.line-page.table-block span {
+    color: var(--gray-title);
+    font-family: Gilroy;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 83.49px;
+    text-align: left;
+}
+.line-page.table-block {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.table-title {
+    background-color: var(--red-title);
+    color: #ffff;
+    display: flex;
+    align-items: center;
+    font-family: Gilroy;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 41.76px;
+    text-align: left;
+    padding: 32px;
+}
+.table {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 45px;
+    background-color: #F3F3F3;
+    border-radius: 20px;
+    margin-top: 80px;
+    gap: 10px;
+}
+.table-row {
+    display: grid;
+    gap: 10px;
+}
+.table-1-1 {
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.table-2-1 {
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+.table-1 {
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+.table-cell {
+    background-color: #CDCED1;
+    font-family: Gilroy;
+    font-size: 29px;
+    font-weight: 500;
+    line-height: 41.76px;
+    text-align: left;
+    color: #060606;
+    padding: 32px;
+}
+.table-cell p{
+    font-family: Gilroy;
+    font-size: 29px;
+    font-weight: 700;
+    line-height: 41.76px;
+    text-align: center;
+}
+.cell-gray {
+    background-color: #ACB0B8;
 }
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
