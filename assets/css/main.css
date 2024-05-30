@@ -417,7 +417,7 @@ img {
 
 .work_wrapper {
     display: grid;
-    grid-template-columns: 2fr repeat(3, 1fr); /* First column is 2fr, rest are 1fr */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px; /* Adjust the gap as needed */
   }
   
@@ -1813,6 +1813,14 @@ input {
 
     
 }
+
+@media (max-width: 920px) {
+    .additional-header {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
 @media (max-width: 720px) {
     /*New dev*/
     .line-page.service {
