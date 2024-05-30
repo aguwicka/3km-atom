@@ -1174,6 +1174,8 @@ input {
 .equipment-body {
     padding-top: 120px;
     padding-bottom: 120px;
+    display: flex;
+    gap: 30px;
 }
 .line-page.table-title-block h2{
     color: var(--red-title);   
@@ -1221,6 +1223,9 @@ input {
     display: grid;
     gap: 10px;
 }
+.table-row-flex {
+    display: flex;
+}
 .table-1-1 {
     grid-template-columns: 1fr 1fr;
     gap: 10px;
@@ -1242,6 +1247,8 @@ input {
     text-align: left;
     color: #060606;
     padding: 32px;
+    display: flex;
+    align-items: center;
 }
 .table-cell p{
     font-family: Gilroy;
@@ -1293,6 +1300,14 @@ input {
     text-align: left;
     margin-top: 30px;
 
+}
+.equipment-block {
+    background-color: var(--card-item);
+}
+.equipment-block.card-item {
+    display: flex;
+    align-items: center;
+    gap: 30px;
 }
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
