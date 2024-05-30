@@ -8,6 +8,7 @@
 :root {
     --red-title: #E62900;
     --gray-title: #ABABAB;
+    --card-item: #1F1F1F;
 }
 html {
     background-color: #fff;
@@ -1099,6 +1100,7 @@ input {
     position: absolute;
     bottom: 160px;
     left: 60px;
+    z-index: 20;
 }
 .container {
     width: calc(100% - 120px);
@@ -1173,7 +1175,7 @@ input {
     padding-top: 120px;
     padding-bottom: 120px;
 }
-.line-page.table-block h2{
+.line-page.table-title-block h2{
     color: var(--red-title);   
     font-family: Gilroy;
     font-size: 69px;
@@ -1182,7 +1184,7 @@ input {
     text-align: left;
 
 }
-.line-page.table-block span {
+.line-page.table-title-block span {
     color: var(--gray-title);
     font-family: Gilroy;
     font-size: 69px;
@@ -1250,6 +1252,47 @@ input {
 }
 .cell-gray {
     background-color: #ACB0B8;
+}
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    
+}
+.bg-black .card-item {
+    background-color: var(--card-item);
+    padding: 30px;
+    border-radius: 30px;
+}
+.bg-black .card-item h2{
+    color: var(--red-title);
+    font-family: Gilroy;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 48.15px;
+    text-align: left;
+
+}
+.bg-black .card-item span{
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 48.15px;
+    text-align: left;
+
+}
+.bg-black .card-item p {
+    color: #fff;
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    margin-top: 30px;
+
 }
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
@@ -1606,5 +1649,84 @@ input {
     }
     .peherps_desc {
         font-size: 8px;
+    }
+
+    /*New dev*/
+    .line-page.service {
+        flex-wrap: wrap-reverse;
+    }
+    .line-page.card-grid {
+        display: none;
+    }
+    .container {
+        width: calc(100% - 30px);
+    }
+    .line-page.table-title-block h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38.72px;
+    }
+    .equipment-title {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .equipment-title h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38.72px;
+
+    }
+    .equipment-body img{
+        width: 100%;
+    }
+    .line-page.table-title-block span {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 30.25px;
+    }
+    .banner_title {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 33px;
+        text-align: center;
+    }
+    .line-page.service .service-info {
+        width: 100%;
+    }
+    .line-page.service img {
+        width: 100%;
+    }
+    .equipment-title span {
+        text-align: left;
+    }
+    .table-title {
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 12.96px;
+        padding: 10px;
+    }
+    .table-cell {
+        font-size: 8px;
+        font-weight: 500;
+        line-height: 11.52px;
+        padding: 10px;
+    }
+    .table-cell p {
+        font-size: 9px;
+        font-weight: 700;
+        line-height: 12.96px;
+    }
+    .line-page.table-block {
+        width: 100%;
+    }
+    .line-page.table-block .table {
+        border-radius: 0;
+        padding: 15px;
+    }
+    .table {
+        gap: 5px;
+    }
+    .table-row {
+        gap: 5px;
     }
 }
