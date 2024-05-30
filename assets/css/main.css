@@ -171,7 +171,7 @@ img {
     height: 600px;
     position: relative;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     padding: 0;
 }
@@ -181,6 +181,7 @@ img {
     bottom: 80px;
     color: #ffff;
     z-index: 20;
+    text-transform: uppercase;
 }
 .header_info_content {
     z-index: 2;
@@ -1938,6 +1939,7 @@ input {
     }
     .header_info {
         height: 350px;
+        background-size: auto 100%;
     }
     h1 {
         font-size: 25px;
