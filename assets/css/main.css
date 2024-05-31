@@ -32,6 +32,7 @@ h1 {
 :root {
     --red-title: #E62900;
     --gray-title: #ABABAB;
+    --gray-span: #676E7C;
     --card-item: #1F1F1F;
     --container-left: 60px;
     --container-right: 60px;
@@ -1458,6 +1459,54 @@ input {
     border-radius: 20px;
     color: #ffff;
 }
+.about-info .about-title-block {
+    display: flex;
+    justify-content: space-between;
+
+}
+.red-h2 {
+    color: var(--red-title);
+}
+.white-span {
+    color: #ffff
+}
+.gray-span {
+    color: var(--gray-title);
+}
+.black-span {
+    color: black;
+}
+.about-title h2{
+    font-family: Gilroy;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 87.63px;
+    text-align: left;
+}
+.about-title h2 span {
+    font-family: Gilroy;
+    font-size: 53px;
+    font-weight: 600;
+    line-height: 58.83px;
+    text-align: left;
+}
+.bg-black {
+    color: #ffff
+}
+.about-title-text p {
+    font-family: Roboto Flex;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+    text-align: right;
+
+}
+.about-info {
+    margin-top: 120px;
+}
+.span-gray {
+    color: var(--gray-span);
+}
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
     .contacts_grid_wrapper {
@@ -1957,5 +2006,23 @@ input {
         font-size: 25px;
         line-height: 31.75px;
         text-transform: uppercase;
+    }
+    .about-info .about-title-block {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .about-title h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .about-title h2 span {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .about-title-text p {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
     }
 }
