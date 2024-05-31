@@ -1158,6 +1158,7 @@ input {
 }
 .line-page.service img {
     width: 50%;
+    border-radius: 30px;
 }
 .line-page.service .service-info {
     padding: 30px;
@@ -1919,6 +1920,7 @@ input {
     }
     .line-page.service img {
         width: 100%;
+  
     }
     .equipment-title span {
         text-align: left;
