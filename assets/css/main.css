@@ -793,6 +793,7 @@ input {
     -o-background-size: cover;
     background-size: cover;
     border-radius: 30px;
+    background-attachment: unset;
 }
 .jobs_type_item::after {
     content: '';
@@ -1507,6 +1508,24 @@ input {
 }
 .span-gray {
     color: var(--gray-span);
+}
+.index h2 {
+    position: absolute;
+    left: var(--container-left);
+    top: 110px;
+}
+.header_info.index {
+    height: 890px;
+}
+.index .header_into_text {
+    position: absolute;
+    bottom: 120px;
+    right: var(--container-right);
+    left: var(--container-left);
+    width: calc(100% - var(--container-left) - var(--container-right));
+}
+.index .header_into_text h1{
+    position: unset;
 }
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
