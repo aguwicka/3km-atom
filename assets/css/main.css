@@ -872,6 +872,7 @@ input {
 
 .work_solution_wrapper {
     padding: 95px 60px;
+    overflow: hidden;
 }
 
 .work_solution_wrapper .content_title h2 {
@@ -892,6 +893,7 @@ input {
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 
 .solutin_info_grid::before {
@@ -904,7 +906,7 @@ input {
     background-repeat: no-repeat;
     left: -165px;
     margin-top: -180px;
-    transform: scale(0.75);
+    transform: scale(0.55);
 }
 
 .info_grid_count {
@@ -1243,6 +1245,14 @@ input {
     padding: 82px 120px;
     background: rgba(230, 41, 0, 1);
     border-radius: 30px;
+    position: relative;
+}
+
+.logo_banner_services{
+    position: absolute;
+    bottom: 6px;
+    right: -3px;
+    width: 30%;
 }
 
 .banner_sub_info {
@@ -1296,6 +1306,10 @@ input {
 
 .rezka_banner {
     background: url(/assets/img/rezka/b29b804f30a3217e4e07dc4eeebbfa76.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+.line_banner{
+    background: url(/assets/img/line/image_35.png) no-repeat;
     background-size: cover;
 }
 
@@ -1936,6 +1950,13 @@ input {
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
+
+    .advantages_wrapper .content_title h2 {
+        font-size: 46px;
+        line-height: 45px;
+    }
+
+
     .work_solution_wrapper h2 span.titlspan {
         font-size: 46px;
         line-height: 45px;
@@ -1960,8 +1981,8 @@ input {
 
 
     .solutin_info_grid::before {
-        left: -150px;
-        margin-top: -200px;
+        left: -250px;
+        margin-top: -270px;
     }
 
 
@@ -2360,11 +2381,11 @@ input {
         margin-top: 10px;
         border-top: 1px solid rgba(230, 41, 0, 1);
         width: 100%;
-        font-size: 13px;
+        font-size: 26px;
     }
 
     .advantages_grid_item p {
-        font-size: 9px;
+        font-size: 16px;
     }
 
     .content_title h2 span {
@@ -2537,15 +2558,48 @@ input {
 @media (max-width: 1080px) {
 
 
-    .solutin_info_grid{
-        margin-top: 50px; 
+
+    .banner_services_wrapper {
+        padding: 30px;
+    }
+
+    .banner_sub_info,
+    .banner_title,
+    .banner_btn_wrap {
+        max-width: 100%;
+        text-align: center;
+    }
+
+
+    .advantages_grid {
+        gap: 25px
+    }
+
+    .advantages_item_title {
+        font-size: 13px;
+        line-height: 13px;
+    }
+
+    .advantages_grid_item p {
+        font-size: 9px;
+        line-height: 11px;
+
+    }
+
+    .advantages_wrapper .content_title h2 {
+        font-size: 25px;
+        line-height: 25px
+    }
+
+    .solutin_info_grid {
+        margin-top: 50px;
     }
 
     .info_grid_count {
         font-size: 32px;
         line-height: 32px;
     }
-    
+
     .info_grid_itle {
         font-size: 15px;
         line-height: 16px;
@@ -2568,9 +2622,10 @@ input {
     }
 
     .solutin_info_grid::before {
-        left: 180px;
-        margin-top: -200px;
-        transform: scale(0.75);
+        left: 43%;
+        margin-top: -326px;
+        transform: scale(0.55);
+        width: 73%;
     }
 
 
