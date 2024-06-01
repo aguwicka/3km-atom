@@ -201,7 +201,7 @@ img {
 .header_info h1 {
     position: relative;
     left: var(--container-left);
-    bottom: -243px;
+    bottom: 0px;
     color: #ffff;
     z-index: 20;
     text-transform: uppercase;
@@ -869,14 +869,20 @@ input {
     justify-content: flex-start;
 }
 
+
 .work_solution_wrapper {
     padding: 95px 60px;
+}
+
+.work_solution_wrapper .content_title h2 {
+    font-size: 49px;
+    line-height: 45px;
 }
 
 .solution_text_grid {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.1fr;
     gap: 32px;
 }
 
@@ -885,6 +891,20 @@ input {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 32px;
+    margin-bottom: 40px;
+}
+
+.solutin_info_grid::before {
+    content: "";
+    z-index: -1;
+    width: 100%;
+    height: 118%;
+    background-image: url('/assets/img/VectorV.svg');
+    position: absolute;
+    background-repeat: no-repeat;
+    left: -165px;
+    margin-top: -180px;
+    transform: scale(0.75);
 }
 
 .info_grid_count {
@@ -932,7 +952,7 @@ input {
     margin-top: 110px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 32px;
+    gap: 90px;
     position: relative;
     z-index: 3;
 }
@@ -1273,6 +1293,12 @@ input {
 .delivery_banner {
     background: url(../img/delivery.jpg) no-repeat center center fixed;
 }
+
+.rezka_banner {
+    background: url(/assets/img/rezka/b29b804f30a3217e4e07dc4eeebbfa76.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
 
 .full_title_wrap .content_title,
 .full_title_wrap {
@@ -1899,10 +1925,25 @@ input {
     width: 30%;
 }
 
+.work_solution_wrapper h2.titlh2 {
+    color: rgba(230, 41, 0, 1);
+}
+
+.work_solution_wrapper h2 span.titlspan {
+    color: #000;
+}
+
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
+    .work_solution_wrapper h2 span.titlspan {
+        font-size: 46px;
+        line-height: 45px;
+    }
 
+    .work_solution_wrapper .content_title {
+        grid-template-columns: 1fr 0.5fr;
+    }
 
     .slider_content_wrapper::before {
         content: "";
@@ -1918,6 +1959,11 @@ input {
     }
 
 
+    .solutin_info_grid::before {
+        left: -150px;
+        margin-top: -200px;
+    }
+
 
     .slider_content p {
         width: 30%;
@@ -1926,7 +1972,7 @@ input {
     }
 
     .minus {
-        font-size: 46px ;
+        font-size: 46px;
         font-weight: 500;
     }
 
@@ -2042,7 +2088,7 @@ input {
     .content_title h2 {
         font-size: 46px;
         line-height: 58px;
-        width: 80%;
+        width: 100%;
     }
 
     .services_wrapper .content_title h2 span {
@@ -2283,25 +2329,27 @@ input {
         height: 500px;
     }
 
-    .solution_text_grid {
-        grid-template-columns: 1fr;
-    }
+
 
     .solution_text_grid p {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .info_grid_count {
-        font-size: 32px;
+        font-size: 56px;
+        line-height: 55px;
         width: 100%;
     }
 
     .info_grid_itle {
-        font-size: 15px;
+        font-size: 30px;
+        line-height: 31px;
     }
 
     .info_grid_text {
-        font-size: 12px;
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .advantages_grid {
@@ -2386,6 +2434,7 @@ input {
     .large {
         grid-column: 1 / span 2;
     }
+
 
     .slider_content_wrapper,
     .services_wrapper,
@@ -2487,9 +2536,43 @@ input {
 
 @media (max-width: 1080px) {
 
+
+    .solutin_info_grid{
+        margin-top: 50px; 
+    }
+
+    .info_grid_count {
+        font-size: 32px;
+        line-height: 32px;
+    }
+    
+    .info_grid_itle {
+        font-size: 15px;
+        line-height: 16px;
+    }
+
+    .info_grid_text {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .work_solution_wrapper .content_title h2,
+    .work_solution_wrapper h2 span.titlspan {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+
     .header_menus_mob .menu_btn {
         display: block;
     }
+
+    .solutin_info_grid::before {
+        left: 180px;
+        margin-top: -200px;
+        transform: scale(0.75);
+    }
+
 
     .header_menus_mob nav {
         display: flex;
@@ -2521,6 +2604,17 @@ input {
     .header_menus_mob nav ul li a {
         color: #000;
     }
+
+
+    .solution_text_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .solution_text_grid p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
 
 
     .slider_content {
@@ -2754,6 +2848,12 @@ input {
 
     .footer_info_wrap {
         padding: 15px 15px;
+    }
+
+
+    .without_banner .header_into_text .info_text {
+        position: absolute;
+        top: 220%;
     }
 
     /*New dev*/
