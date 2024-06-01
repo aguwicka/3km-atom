@@ -1909,6 +1909,12 @@ input {
     position: relative;
     display: flex;
     align-items: flex-start;
+    font-size: 25px;
+}
+.checkmark h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #676E7C;
 }
 .checkmark::before {
     content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
