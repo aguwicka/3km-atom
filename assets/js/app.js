@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 
 
-  $('.owl-carousel').owlCarousel({
+  $('.main_slider.owl-carousel').owlCarousel({
     loop: true,
     dots: false,
     nav: true,
@@ -44,6 +44,17 @@ $(document).ready(function () {
 
 
     }
+  })
+
+  $('.card .owl-carousel').owlCarousel({
+    loop: false,
+    dots: false,
+    nav: true,
+    items: 1,
+    navText: [
+      "<div class='custom-prev'><svg xmlns='http://www.w3.org/2000/svg' width='29' height='52' viewBox='0 0 29 52' fill='none'><path d='M27 2L4 26.4211L27 50' stroke='#E62900' stroke-width='5'/></svg></div>",
+      "<div class='custom-next'><svg xmlns='http://www.w3.org/2000/svg' width='29' height='52' viewBox='0 0 29 52' fill='none'><path d='M27 2L4 26.4211L27 50' stroke='#E62900' stroke-width='5'/></svg></div>"
+    ],
   })
 
 });
