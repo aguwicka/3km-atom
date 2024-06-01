@@ -1905,7 +1905,33 @@ input {
 .jobs_types_wrapper {
     margin-bottom: 60px;
 }
+.checkmark {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+.checkmark::before {
+    content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+    width: 50px;
+    height: 50px;
+}
 
+.checkmark-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+.checkmark-block::before {
+    height: 100%;
+    position: absolute;
+    border-left: 4px solid red;
+    left: 24px;
+    right: 0;
+    content: "";
+    width: 4px;
+    
+}
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
