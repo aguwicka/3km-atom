@@ -82,21 +82,25 @@ img {
     color: #fff;
 }
 
-.owl-carousel .owl-nav button.owl-prev,
-.owl-carousel .owl-nav button.owl-next {
+.main_slider.owl-carousel .owl-nav button.owl-prev,
+.main_slider.owl-carousel .owl-nav button.owl-next {
     z-index: 1;
     position: absolute;
     top: 50%;
     transform: translate(-50%, 0);
 }
 
-.owl-carousel .owl-nav button.owl-prev {
+.main_slider.owl-carousel .owl-nav button.owl-prev {
     left: -40px;
 }
 
-.owl-carousel .owl-nav button.owl-next {
+.main_slider.owl-carousel .owl-nav button.owl-next {
     right: -40px;
     transform: rotate(180deg);
+}
+
+.cards-owl {
+    display: none !important;
 }
 
 .wrapepr {
@@ -360,7 +364,6 @@ img {
     margin-top: 90px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* ÃÂ ÃÂ°Ã‘ÂÃÂ¿Ã‘â‚¬ÃÂµÃÂ´ÃÂµÃÂ»Ã‘ÂÃÂµÃ‘â€š ÃÂºÃÂ¾ÃÂ»ÃÂ¾ÃÂ½ÃÂºÃÂ¸ ÃÂ°ÃÂ²Ã‘â€šÃÂ¾ÃÂ¼ÃÂ°Ã‘â€šÃÂ¸Ã‘â€¡ÃÂµÃ‘ÂÃÂºÃÂ¸ Ã‘Â ÃÂ¼ÃÂ¸ÃÂ½ÃÂ¸ÃÂ¼ÃÂ°ÃÂ»Ã‘Å’ÃÂ½ÃÂ¾ÃÂ¹ Ã‘Ë†ÃÂ¸Ã‘â‚¬ÃÂ¸ÃÂ½ÃÂ¾ÃÂ¹ 300px */
     gap: 30px;
 }
 
@@ -1539,7 +1542,7 @@ input {
     padding-top: 120px;
     padding-bottom: 120px;
     display: flex;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .equipment-body img {
@@ -1588,7 +1591,8 @@ input {
     padding: 32px;
 }
 
-.table-title.right, .table-cell.right {
+.table-title.right,
+.table-cell.right {
     justify-content: center;
 }
 
@@ -1664,6 +1668,10 @@ input {
     background-color: var(--card-item);
     padding: 30px;
     border-radius: 30px;
+    width: 100%;
+    /* margin: 30px; */
+    /* margin-top: 95px; */
+    /* margin-left: 20px; */
 }
 
 .bg-black .card-item h2 {
@@ -1693,8 +1701,7 @@ input {
     font-weight: 400;
     line-height: 36px;
     text-align: left;
-    margin-top: 30px;
-
+    /* margin-top: 30px; */
 }
 
 .equipment-block {
@@ -1978,6 +1985,15 @@ input {
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
+    .bg-black .card-item h2{
+        font-size: 30px;
+        line-height: 32px;   
+    }
+
+    .bg-black .card-item p{
+        font-size: 16px;
+        line-height: 24px;
+    }
 
     .advantages_wrapper .content_title h2 {
         font-size: 46px;
@@ -2236,16 +2252,16 @@ input {
         line-height: 19px;
     }
 
-    .owl-carousel .owl-nav button.owl-next {
+    .main_slider.owl-carousel .owl-nav button.owl-next {
         right: -15px;
     }
 
-    .owl-carousel .owl-nav button.owl-prev {
+    .main_slider.owl-carousel .owl-nav button.owl-prev {
         left: -15px;
     }
 
-    .owl-carousel .owl-nav button.owl-next svg,
-    .owl-carousel .owl-nav button.owl-prev svg {
+    .main_slider.owl-carousel .owl-nav button.owl-next svg,
+    .main_slider.owl-carousel .owl-nav button.owl-prev svg {
         width: 9px;
         height: 18px;
     }
@@ -2626,7 +2642,74 @@ input {
 
 @media (max-width: 1080px) {
 
+    .cards-owl {
+        display: block !important;
+    }
 
+    .box-img {
+        margin: 0px;
+    }
+
+    .cards-owl.owl-carousel .owl-nav button.owl-prev,
+    .cards-owl.owl-carousel .owl-nav button.owl-next {
+        z-index: 1;
+        position: absolute;
+
+    }
+
+    .cards-owl.owl-carousel .owl-nav button.owl-prev {
+        left: 32px;
+        transform: scale(-1, -1);
+        top: 15px;
+        width: 55px;
+        background: #FFFFFF;
+        height: 55px;
+        border-radius: 50px;
+    }
+
+    .cards-owl.owl-carousel .owl-nav button.owl-next {
+        left: 95px;
+        top: 15px;
+        width: 55px;
+        background: #FFFFFF;
+        height: 55px;
+        border-radius: 50px;
+    }
+
+    .equipment-title {
+        padding-top: 20px;
+    }
+
+    .equipment-body {
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .bg-black .cards-owl .card-item {
+        margin-top: 95px;
+    }
+
+    .bg-black .card-item {
+        margin-top: 20px;
+    }
+
+    .bg-black .card-item h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 21px;
+    }
+
+    .bg-black .card-item p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
     .banner_services_wrapper {
         padding: 30px;
@@ -3313,3 +3396,43 @@ input {
 
 
 }
+.box-img{
+    margin-right: 20px;
+}
+
+.bg-black .checkmark {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.bg-black .checkmark::before {
+    content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+    width: 50px;
+    height: 50px;
+    position: relative;
+    /* top: 35px; */
+    padding-right: 20px;
+}
+
+.bg-black .checkmark-block {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    overflow: hidden; /* Добавляем это свойство */
+    clip-path: inset(0 0 0 0); /* Это свойство, чтобы скрыть выходящие элементы */
+    flex-direction: column;
+}
+
+.bg-black .checkmark-block::before {
+    height: 62%;
+    position: absolute;
+    border-left: 4px solid red;
+    left: 24px;
+    right: 0;
+    content: "";
+    width: 4px;
+    /* bottom: 134px; */
+}
+
+
