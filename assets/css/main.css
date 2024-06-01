@@ -968,7 +968,7 @@ input {
 }
 
 .jobs_type_grid {
-    margin-top: 70px;
+
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
@@ -978,15 +978,18 @@ input {
     padding: 30px;
     height: 420px;
     position: relative;
-    background: url(../img/job/1.png) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     border-radius: 30px;
     background-attachment: unset;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
-
+.jobs_types_wrapper {
+    padding-top: 0px;
+}
 .jobs_type_item::after {
     content: '';
     position: absolute;
@@ -1792,8 +1795,9 @@ input {
     font-family: Gilroy;
     font-size: 69px;
     font-weight: 600;
-    line-height: 87.63px;
+    line-height: 68.31px;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .about-title h2 span {
@@ -1897,6 +1901,9 @@ input {
 
 .slider_content p {
     width: 30%;
+}
+.jobs_types_wrapper {
+    margin-bottom: 60px;
 }
 
 /** MOBILE **/
@@ -2482,6 +2489,13 @@ input {
     .additional-header {
         flex-wrap: wrap;
         gap: 30px;
+    }
+    .about-info {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .jobs_types_wrapper {
+        margin-bottom: 40px;
     }
 }
 
