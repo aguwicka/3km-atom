@@ -630,6 +630,12 @@ img {
     /* ÃÂ§Ã‘â€šÃÂ¾ÃÂ±Ã‘â€¹ ÃÂ¿Ã‘ÂÃÂµÃÂ²ÃÂ´ÃÂ¾Ã‘ÂÃÂ»ÃÂµÃÂ¼ÃÂµÃÂ½Ã‘â€š ÃÂ½ÃÂ°Ã‘â€¦ÃÂ¾ÃÂ´ÃÂ¸ÃÂ»Ã‘ÂÃ‘Â ÃÂ½ÃÂ°ÃÂ´ Ã‘â€žÃÂ¾ÃÂ½ÃÂ¾ÃÂ¼ */
 }
 
+
+.banner_btn_wrap a {
+    width: 20%;
+    display: inline-block;
+}
+
 .form_wrapper h2 {
     position: relative;
     z-index: 2;
@@ -2043,8 +2049,32 @@ input {
     .banner_sub_info,
     .banner_title,
     .banner_btn_wrap {
-        max-width: 100%;
-        text-align: center;
+        /* max-width: 100%; */
+        /* text-align: center; */
+    }
+
+    .banner_sub_info{
+        font-size: 13px;
+        line-height: 16px;  
+    }
+
+    .btn-banner{
+        font-size: 13px;
+        line-height: 16px; 
+        padding: 25px 70px;
+    }
+
+    .banner_btn_wrap a{
+        font-size: 10px;
+        line-height: 11px;
+    }
+
+    .banner_title {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-size: 46px;
+        line-height: 58px;
+        text-align: left;
     }
 
     .usefull_wrap {
