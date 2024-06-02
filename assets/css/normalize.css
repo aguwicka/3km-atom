@@ -505,6 +505,18 @@ body .bg-black .card-item {
   top: 5.5%;
   transform: scale(1.35);
 }
+.description {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.description .drob_info_grid {
+  gap: 0;
+
+}
+.description .drob_info_grid_item {
+  border-radius: 0;
+} 
+
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
     font-size: 30px;

@@ -1115,6 +1115,7 @@ input {
     margin-top: 25px;
     font-size: 40px;
     color: rgba(103, 110, 124, 1);
+    font-weight: 600;
 }
 
 .drob_info_grid_item p {
@@ -1562,7 +1563,10 @@ input {
     position: relative;
 }
 
-equip
+.equip .equipment-title {
+    display: flex;
+    justify-content: space-between;
+}
 
 .equipment-title {
     display: flex;
@@ -1604,9 +1608,9 @@ equip
 }
 
 .equip .equipment-body img {
-   border-radius: 20px;
-   width: 702px;
-   height: 484px;
+    border-radius: 20px;
+    width: 702px;
+    height: 484px;
 }
 
 .pt {
@@ -1761,6 +1765,15 @@ equip
     line-height: 36px;
     text-align: left;
     margin-top: 30px;
+}
+
+
+.equip .card-item span {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+
 }
 
 .equipment-block {
@@ -2239,6 +2252,12 @@ equip
     gap: 30px;
 }
 
+.sverche .checkmark {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 .fq-block {
     margin-top: 80px;
 }
@@ -2263,6 +2282,23 @@ equip
         border-radius: 20px;
         width: 468px;
         height: 322px;
+    }
+
+    .equip .equipment-title h2 {
+
+        font-size: 46px;
+        font-weight: 600;
+        line-height: 55px;
+        text-align: left;
+
+    }
+
+    .equip .equipment-title span {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.67px;
+        text-align: right;
+        width: 50%;
     }
 
     .line-page.service .service-info {
@@ -3018,7 +3054,7 @@ equip
         width: 100%;
     }
 
-    .equip .equipment-body img{
+    .equip .equipment-body img {
         width: 100% !important;
     }
 }
@@ -3042,7 +3078,40 @@ equip
 
 @media (max-width: 1080px) {
 
-    .service.sver::before{
+    .checkmark h3 {
+        display: none;
+    }
+
+    .equip .equipment-title {
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .equip .checkmark::before {
+        transform: scale(0.6);
+        position: relative;
+        top: -30px;
+    }
+
+    .equip .equipment-title h2 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 38px;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .equip .equipment-title span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 19px;
+        text-align: left;
+        width: 100%;
+
+    }
+
+
+    .service.sver::before {
         content: "";
         z-index: -1;
         width: 274px;
@@ -3250,7 +3319,7 @@ equip
         display: block !important;
     }
 
-    .equip .box-img{
+    .equip .box-img {
         margin-right: 0px;
     }
 
