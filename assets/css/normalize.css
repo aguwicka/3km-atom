@@ -516,11 +516,55 @@ body .bg-black .card-item {
 .description .drob_info_grid_item {
   border-radius: 0;
 } 
+.description .drob_info_item1 {
+  background-size: cover;
+  background-position: center;
+}
+.description .drob_info_grid1 {
+  grid-template-columns: 1fr 1fr;
+  display: grid;
+}
+.drob_info_grid_item1 {
+  padding: 46px 40px;
+  background: rgba(240, 240, 240, 1);
+}
+.contacts_grid_wrapper .item .contacts_grid_item{
+  height: 385px;
+}
+.contacts_title {
+  font-family: Gilroy;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 48.15px;
+  text-align: left;
 
+}
+.contacts_desc {
+  font-family: Gilroy;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+}
+.contacts_inf {
+  font-family: Gilroy;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: left;
+}
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
     font-size: 30px;
     line-height: 32px;
+  }
+  .description .drob_info_grid1 {
+    grid-template-columns: 1fr 1fr;
+
+  }
+  .contact_info_wrapper .contacts_grid_wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+
   }
 }
 @media only screen and (max-width: 1080px) {
@@ -545,6 +589,10 @@ body .bg-black .card-item {
     padding-left: 0;
     padding-right: 0;
   }
+  .description .drob_info_grid {
+    grid-template-columns: 1fr 1fr;
+    order: unset;
+  }
 }
 @media (max-width: 920px) {
   .blocks.card-grid {
@@ -553,6 +601,25 @@ body .bg-black .card-item {
   .company_advantages_wrap .company_advantages_grid {
     grid-template-columns: 1fr;
   }
+  .description .drob_info_grid {
+    grid-template-columns: 1fr 1fr;
+    order: unset;
+  }
+  .contact_info_wrapper .contacts_grid_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .contact_info_wrapper .contacts_grid_wrapper .contactitem:first-child {
+    width: 100%;
+  }
+  .contacts_grid_wrapper .contactitem {
+    width: 45%;
+  }
 }
 @media (max-width: 600px) {
+  .description .drob_info_grid {
+    grid-template-columns: 1fr 1fr;
+    order: unset;
+  }
 }

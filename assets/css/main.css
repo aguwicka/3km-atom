@@ -48,6 +48,8 @@ body {
     overflow-x: hidden;
 }
 
+
+
 ul,
 ol {
     list-style: none;
@@ -82,6 +84,10 @@ img {
     color: #fff;
 }
 
+.wrapper {
+    overflow: hidden;
+}
+
 .main_slider.owl-carousel .owl-nav button.owl-prev,
 .main_slider.owl-carousel .owl-nav button.owl-next {
     z-index: 1;
@@ -110,7 +116,6 @@ img {
 
 .header_wrapper {
     position: relative;
-    overflow: hidden;
 }
 
 .header_logo {
@@ -1609,8 +1614,8 @@ input {
 
 .equip .equipment-body img {
     border-radius: 20px;
-    width: 702px;
-    height: 484px;
+    background: #fff;
+    height: 100%;
 }
 
 .pt {
@@ -1775,6 +1780,22 @@ input {
     text-align: left;
 
 }
+
+.box-img.bg-im {
+    background: #ffff;
+    border-radius: 30px;
+    width: 580px;
+    height: 640px;
+}
+
+.bg-im img {
+    width: 516px;
+    height: 611px;
+}
+
+
+
+
 
 .equipment-block {
     background-color: var(--card-item);
@@ -2254,8 +2275,36 @@ input {
 
 .sverche .checkmark {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
+}
+
+.equip .checkmark::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% + 30px);
+    border-left: 4px solid red;
+    content: "";
+    left: 24px;
+
+}
+
+.equip .checkmark:first-child::after {
+    height: calc(50% + 30px);
+    top: 42%;
+    left: 24px;
+}
+
+.equip .checkmark:last-child::after {
+    height: calc(50% + 30px);
+    bottom: 50%;
+    left: 24px;
+    top: auto;
+}
+
+.equip .checkmark:last-child::after {
+    bottom: 100%;
 }
 
 .fq-block {
@@ -2278,10 +2327,19 @@ input {
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
+    .equip .card-item span {
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+
+    }
+
     .equip .equipment-body img {
         border-radius: 20px;
-        width: 468px;
-        height: 322px;
+        /* width: 468px; */
+        height: 100%;
     }
 
     .equip .equipment-title h2 {
@@ -3082,6 +3140,14 @@ input {
         display: none;
     }
 
+
+    .bg-black.equip .card-item span {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21.6px;
+        text-align: left;
+    }
+
     .equip .equipment-title {
         flex-wrap: wrap;
         margin-top: 50px;
@@ -3090,7 +3156,7 @@ input {
     .equip .checkmark::before {
         transform: scale(0.6);
         position: relative;
-        top: -30px;
+        /* top: -30px; */
     }
 
     .equip .equipment-title h2 {
@@ -3483,15 +3549,16 @@ input {
     .header_menus_mob nav {
         display: flex;
         position: absolute;
-        height: 90px;
+        height: 643px;
         left: 100%;
         transition: 0.5s;
         width: 100%;
-        top: 100%;
-        background: #ffffff;
+        top: 0%;
+        background: #000000;
         align-items: center;
         justify-content: center;
         overflow: hidden;
+        z-index: -1;
     }
 
     .header_menus_mob.active nav {
@@ -3501,14 +3568,23 @@ input {
 
     .header_menus_mob nav ul {
         display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: -20px;
+        top: 15%;
     }
 
     .header_menus_mob nav ul li {
         margin-right: 20px;
+        margin-bottom: 53px;
     }
 
     .header_menus_mob nav ul li a {
-        color: #000;
+        color: #fff;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 22px;
+        text-align: left;
     }
 
 
@@ -3933,7 +4009,7 @@ input {
 
     .header_info {
         height: 350px;
-        background-size: auto 100%;
+        background-size: cover;
     }
 
     h1 {
@@ -4101,36 +4177,37 @@ input {
     justify-content: center;
 }
 
-.bg-black .checkmark {
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
+.equip .checkmark::before {
+    transform: scale(0.8);
 }
 
-.bg-black .checkmark::before {
-    content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
-    width: 50px;
-    height: 50px;
-    position: relative;
-    padding-right: 20px;
+.container .sverche {
+    margin-left: 0;
 }
 
-.bg-black .checkmark-block {
-    display: flex;
-    gap: 20px;
-    position: relative;
-    overflow: hidden;
-    clip-path: inset(0 0 0 0);
-    flex-direction: column;
-}
-
-.bg-black .checkmark-block::before {
-    height: 62%;
+.equip .checkmark::after {
     position: absolute;
+    left: 0;
+    top: 0;
+    height: calc(100% + 40px);
     border-left: 4px solid red;
-    left: 24px;
-    right: 0;
     content: "";
-    width: 4px;
-    /* bottom: 134px; */
+    left: 24px;
+}
+
+.equip .checkmark:first-child::after {
+    height: calc(80% + 30px);
+    top: 21%;
+    left: 24px;
+}
+
+.equip .checkmark:last-child::after {
+    height: calc(50% + 30px);
+    bottom: 50%;
+    left: 24px;
+    top: auto;
+}
+
+.equip .checkmark:last-child::after {
+    bottom: 100%;
 }
