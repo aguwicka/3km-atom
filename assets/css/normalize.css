@@ -553,6 +553,51 @@ body .bg-black .card-item {
   line-height: 36px;
   text-align: left;
 }
+.frezer {
+  margin-bottom: 80px;
+}
+
+.proizvodstvo {
+  position: relative;
+}
+.proizvodstvo::before {
+  content: "";
+  z-index: -1;
+  width: 265px;
+  height: 350px;
+  background-image: url(/assets/img/VectorV.svg);
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 25.9%;
+  top: 15.6%;
+  transform: scale(1.75);
+}
+.proizvodstvo::after {
+  content: "";
+  z-index: -2;
+  width: 500px;
+  height: 500px;
+  background-image: url(/assets/img/proizvodstvo/6dd35a70f92066a49eb0269d8cc763fb.png);
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 67.5%;
+  top: 5.5%;
+  transform: scale(1.35);
+}
+.obrabotka_wrapper  {
+  position: relative;
+  background-image: url(/assets/img/usefull-img.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+.usefull_image img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
     font-size: 30px;
@@ -583,6 +628,20 @@ body .bg-black .card-item {
     background-position: right;
   }
   .specific::before {
+    display: none;
+  }
+  .proizvodstvo::after {
+    width: 100%;
+    right: 0;
+    opacity: 0.7;
+    left: auto;
+    background-size: contain;
+    top: auto;
+    bottom: 0;
+    transform: none;
+    background-position: right;
+  }
+  .proizvodstvo::before {
     display: none;
   }
   .main_content_wrapper.container {
