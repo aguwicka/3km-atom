@@ -25,7 +25,7 @@ $(document).ready(function () {
     ],
     responsive: {
       0: {
-        items: 1,
+        items: 2,
         margin: 40,
       },
       420: {
