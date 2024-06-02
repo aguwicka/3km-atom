@@ -1992,6 +1992,13 @@ input {
     width: 4px;
     
 }
+
+.frezer .checkmark {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
