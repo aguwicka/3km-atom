@@ -361,6 +361,61 @@
 .line-page .card-item h2 {
   font-size: 45px;
 }
+body .checkmark-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+body .checkmark-block::before {
+  height: 100%;
+  position: absolute;
+  border-left: 4px solid red;
+  left: 24px;
+  right: 0;
+  content: "";
+  width: 4px;
+
+}
+body .checkmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body .checkmark::before {
+  content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+  width: 50px;
+  height: 50px;
+}
+.tehnology {
+  background-image: url("/assets/img/stroy/2ebdefe6d041769772e822eb88b220d5.jpg");
+  padding-top: 120px;
+  padding-bottom: 80px;
+  background-size: cover;
+  position: relative;
+}
+.tehnology::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #0000005c;
+}
+.tehnology .container{
+  margin-top: 0;
+  max-height: 0;
+  z-index: 20;
+    position: relative;
+} 
+.white-h1 {
+  color: #fff;
+}
+.tehnology .about-title-block p {
+  color: #fff;
+}
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
     font-size: 30px;
