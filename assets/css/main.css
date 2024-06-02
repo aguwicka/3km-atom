@@ -318,7 +318,7 @@ img {
 
 .slider_img {
     display: flex;
-    /* margin-top: 51px; */
+    margin-top: 51px;
     margin-bottom: 30px;
 }
 
@@ -1022,6 +1022,7 @@ input {
 .jobs_types_wrapper {
     padding-top: 0px;
 }
+
 .jobs_type_item::after {
     content: '';
     position: absolute;
@@ -1073,10 +1074,31 @@ input {
     border-radius: 30px;
 }
 
-.drob_border {
+.drob_border::before {
+    content: "";
+    border: 2px solid red;
+    position: absolute;
     width: 200px;
-    height: 5px;
-    background: rgba(230, 41, 0, 1);
+    margin-top: -20px;
+}
+
+.drob_border h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 42.8px;
+    color: #676E7C;
+    margin-bottom: 15px;
+
+}
+
+.drob_border span {
+
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #000;
+
 }
 
 .drob_title {
@@ -1330,6 +1352,10 @@ input {
     background-repeat: no-repeat;
 }
 
+.sles_banner {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .full_title_wrap .content_title,
 .full_title_wrap {
@@ -1492,14 +1518,6 @@ input {
 
 }
 
-.line-page.service .service-info::after {
-    content: "";
-    border: 2px solid red;
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    width: 200px;
-}
 
 .service {
     position: relative;
@@ -1667,10 +1685,10 @@ input {
     background-color: var(--card-item);
     padding: 30px;
     border-radius: 30px;
-    width: 100%;
+    width: 90%;
     /* margin: 30px; */
     /* margin-top: 95px; */
-    /* margin-left: 20px; */
+    margin-left: 15px;
 }
 
 .bg-black .card-item h2 {
@@ -1724,7 +1742,6 @@ input {
     font-weight: 600;
     line-height: 68.31px;
     text-align: left;
-
 }
 
 .additional-services .additional-header span {
@@ -1806,7 +1823,7 @@ input {
 
 .additional-card .additional-card-text {
     position: absolute;
-    left: 30px;
+    left: 20px;
     bottom: 30px;
 }
 
@@ -1968,20 +1985,24 @@ input {
 .slider_content p {
     width: 30%;
 }
+
 .jobs_types_wrapper {
     margin-bottom: 60px;
 }
+
 .checkmark {
     position: relative;
     display: flex;
     align-items: flex-start;
     font-size: 25px;
 }
+
 .checkmark h3 {
     font-size: 40px;
     font-weight: 600;
     color: #676E7C;
 }
+
 .checkmark::before {
     content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
     width: 50px;
@@ -2006,6 +2027,7 @@ input {
     gap: 20px;
     position: relative;
 }
+
 .checkmark-block::before {
     height: 100%;
     position: absolute;
@@ -2014,17 +2036,24 @@ input {
     right: 0;
     content: "";
     width: 4px;
-    
+
 }
+
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
-    .bg-black .card-item h2{
-        font-size: 30px;
-        line-height: 32px;   
+
+    .additional-card {
+
+        height: 400px;
     }
 
-    .bg-black .card-item p{
+    .bg-black .card-item h2 {
+        font-size: 30px;
+        line-height: 32px;
+    }
+
+    .bg-black .card-item p {
         font-size: 16px;
         line-height: 24px;
     }
@@ -2661,7 +2690,7 @@ input {
 @media (max-width: 920px) {
     .additional-header {
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 0px;
     }
 
     .about-info {
@@ -2675,6 +2704,28 @@ input {
 }
 
 @media (max-width: 1080px) {
+
+
+    .additional-card-header img {
+        width: 12px;
+    }
+
+    .additional-card {
+        height: 180px;
+    }
+
+    .additional-body {
+        margin-top: 20px;
+    }
+
+    .additional-services {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .equipment-block.card-item {
+        width: 100%;
+    }
 
     .cards-owl {
         display: block !important;
@@ -2721,6 +2772,8 @@ input {
 
     .bg-black .cards-owl .card-item {
         margin-top: 95px;
+        margin-left: 0;
+        width: 80%;
     }
 
     .bg-black .card-item {
@@ -2731,6 +2784,7 @@ input {
         font-size: 20px;
         font-weight: 600;
         line-height: 21px;
+        margin-bottom: 20px;
     }
 
     .bg-black .card-item p {
@@ -2739,10 +2793,19 @@ input {
         line-height: 21px;
     }
 
+    .bg-black .card-item span {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 21.4px;
+
+    }
+
     .item {
         display: flex;
         align-items: center;
         justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .banner_services_wrapper {
@@ -3222,7 +3285,7 @@ input {
 
     .additional-services .additional-header h2 {
         font-size: 25px;
-        line-height: 24.75px;
+        line-height: 0;
     }
 
     h2 span {
@@ -3234,9 +3297,10 @@ input {
         font-size: 25px;
     }
 
-    .additional-title-text {
+    .additional-title-text p {
         font-size: 14px;
         text-align: left;
+        line-height: 19px;
     }
 
     .additional-body {
@@ -3247,6 +3311,7 @@ input {
     .additional-card {
         height: 200px;
         padding: 15px;
+        background-size: cover;
     }
 
     .additional-card-number {
@@ -3430,7 +3495,8 @@ input {
 
 
 }
-.box-img{
+
+.box-img {
     margin-right: 20px;
 }
 
@@ -3445,7 +3511,6 @@ input {
     width: 50px;
     height: 50px;
     position: relative;
-    /* top: 35px; */
     padding-right: 20px;
 }
 
@@ -3453,8 +3518,8 @@ input {
     display: flex;
     gap: 20px;
     position: relative;
-    overflow: hidden; /* Добавляем это свойство */
-    clip-path: inset(0 0 0 0); /* Это свойство, чтобы скрыть выходящие элементы */
+    overflow: hidden;
+    clip-path: inset(0 0 0 0);
     flex-direction: column;
 }
 
@@ -3468,5 +3533,3 @@ input {
     width: 4px;
     /* bottom: 134px; */
 }
-
-
