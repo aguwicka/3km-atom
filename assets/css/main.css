@@ -2125,6 +2125,26 @@ input {
     text-align: right;
 }
 
+.frezer .checkmark {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.fq-block {
+    margin-top: 80px;
+}
+.fq-item {
+    font-family: Gilroy;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 48.15px;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid var(--red-title);
+}
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
