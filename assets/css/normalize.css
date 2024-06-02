@@ -356,3 +356,20 @@
   a, button, input {
     cursor: pointer;
   }
+
+/*Перенести в main*/
+.line-page .card-item h2 {
+  font-size: 45px;
+}
+@media only screen and (max-width: 1500px) {
+  .bg-black .card-item h2 span{
+    font-size: 30px;
+    line-height: 32px;
+  }
+}
+@media only screen and (max-width: 1080px) {
+}
+@media (max-width: 920px) {
+}
+@media (max-width: 600px) {
+}

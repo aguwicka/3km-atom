@@ -620,6 +620,13 @@ img {
     background-size: cover;
 }
 
+.form_wrapper.two_bg {
+    background: url(../img/slesar/form_bg.jpg) no-repeat fixed;
+    background-size: cover;
+}
+
+
+
 .form_wrapper::before {
     content: '';
     position: absolute;
@@ -628,9 +635,7 @@ img {
     width: 100%;
     height: 100%;
     background-color: rgba(21, 21, 21, 0.5);
-    /* ÃÂ¦ÃÂ²ÃÂµÃ‘â€š ÃÂ·ÃÂ°Ã‘â€šÃÂµÃÂ¼ÃÂ½ÃÂµÃÂ½ÃÂ¸Ã‘Â Ã‘Â ÃÂ¿Ã‘â‚¬ÃÂ¾ÃÂ·Ã‘â‚¬ÃÂ°Ã‘â€¡ÃÂ½ÃÂ¾Ã‘ÂÃ‘â€šÃ‘Å’Ã‘Å½ */
     z-index: 1;
-    /* ÃÂ§Ã‘â€šÃÂ¾ÃÂ±Ã‘â€¹ ÃÂ¿Ã‘ÂÃÂµÃÂ²ÃÂ´ÃÂ¾Ã‘ÂÃÂ»ÃÂµÃÂ¼ÃÂµÃÂ½Ã‘â€š ÃÂ½ÃÂ°Ã‘â€¦ÃÂ¾ÃÂ´ÃÂ¸ÃÂ»Ã‘ÂÃ‘Â ÃÂ½ÃÂ°ÃÂ´ Ã‘â€žÃÂ¾ÃÂ½ÃÂ¾ÃÂ¼ */
 }
 
 
@@ -664,7 +669,8 @@ img {
     display: flex;
     position: relative;
     z-index: 2;
-    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
 }
 
 .input-group {
@@ -685,8 +691,11 @@ input {
     border: 0;
 }
 
+
+
 .form-name {
     padding: 34px 90px 34px 40px;
+    width: 14%;
 }
 
 .form-phone {
@@ -1953,9 +1962,18 @@ input {
     line-height: 48.15px;
     text-align: left;
     color: #676E7C;
-    border-top: 2px solid var(--red-title);
-    padding-top: 20px;
+    padding-top: 19px;
 }
+
+.type-list span::before {
+    content: "";
+    border-top: 2px solid var(--red-title);
+    width: 20%;
+    position: absolute;
+    margin-top: -25px;
+}
+
+
 
 .type-list .grid-item {
 
@@ -1963,7 +1981,37 @@ input {
 }
 
 .type-list .grid-item .icon {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+}
+
+.slesar {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.slesar span {
+    margin-top: 50px;
+}
+
+.slesar .text-inft {
+
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+
+
+}
+
+.slesar .grid-item {
+    padding: 0px 30px 50px 0px;
+    width: 85%;
+}
+
+.grid-item p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-top: 25px;
 }
 
 .type-list ul {
@@ -2093,6 +2141,7 @@ input {
 .variety-box {
     width: 50%;
     margin-top: 60px;
+    position: relative;
 }
 
 .variety-info .variety-title-block {
@@ -2130,9 +2179,11 @@ input {
     align-items: center;
     gap: 30px;
 }
+
 .fq-block {
     margin-top: 80px;
 }
+
 .fq-item {
     font-family: Gilroy;
     font-size: 45px;
@@ -2145,11 +2196,39 @@ input {
     padding-bottom: 30px;
     border-bottom: 1px solid var(--red-title);
 }
+
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
 
-    .checkmark-block{
+    .slesar {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    
+    .slesar span {
+        margin-top: 50px;
+    }
+    
+    .slesar .text-inft {
+    font-size: 17.33px;
+    font-weight: 500;
+    line-height: 23.33px;
+    }
+    
+    .slesar .grid-item {
+        padding: 0px 30px 50px 0px;
+        width: 85%;
+    }
+    
+    .grid-item p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 36px;
+        margin-top: 25px;
+    }
+
+    .checkmark-block {
         gap: 35px;
     }
 
@@ -2603,6 +2682,7 @@ input {
     .form-submit {
         padding: 20px;
         margin-bottom: 10px;
+        width: 100%;
     }
 
     .form-phone {
@@ -2861,12 +2941,26 @@ input {
 
 @media (max-width: 1080px) {
 
+    .checkmark-block.variety-box::before {
+        height: 68%;
+    }
 
-    .variety-box{
+    .checkmark {
+        align-items: stretch;
+    }
+
+    .checkmark::before {
+        transform: scale(0.6);
+        position: relative;
+        top: -30px;
+    }
+
+    .variety-box {
         width: 100%;
     }
-    .checkmark-block{
-        gap: 30px;
+
+    .checkmark-block {
+        gap: 25px;
     }
 
     .variety-title h2,
@@ -2911,9 +3005,9 @@ input {
         background-image: url('/assets/img/slesar/image 30.png');
         position: absolute;
         background-repeat: no-repeat;
-        left: 8%;
-        top: -23%;
-        transform: scale(1.15);
+        left: 21.9%;
+        top: 9.6%;
+        transform: scale(0.75);
         filter: opacity(0.6);
         background-size: contain;
     }
