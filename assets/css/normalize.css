@@ -431,7 +431,7 @@ body .variety-box .checkmark:last-child::after {
   height: 100%;
   left: 0;
   top: 0;
-  background: #0000005c;
+  background: #0000009e;
 }
 .tehnology .container{
   margin-top: 0;
@@ -445,14 +445,65 @@ body .variety-box .checkmark:last-child::after {
 .tehnology .about-info p {
   color: #fff;
 }
-.tehnology .about-info span {
-  color: #fff;
-  font-family: Gilroy;
-  font-size: 25px;
-  font-weight: 400;
-  line-height: 73.5px;
-  text-align: left;
-
+.tehnology .about-info  .about-title-block{
+  margin-bottom: 30px;
+}
+.tehnology .checkmark-block {
+  margin-top: 20px;
+}
+.price-block {
+  background-color: #F5F8FA;
+  border-radius: 20px;
+  padding: 30px;
+  margin-top: 40px;
+}
+.price-block .checkmark-block {
+  margin-top: 30px;
+}
+body .price-block .checkmark::before {
+  width: 35px;
+  height: 35px;
+  content: url("data:image/svg+xml,%3Csvg width='35' height='35' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
+}
+body .price-block .checkmark::after {
+  left: 17px;
+}
+.feedback {
+  justify-content: space-between;
+  padding: 30px;
+}
+body .bg-black .card-item {
+  margin-left: auto;
+  width: auto;
+}
+.specific {
+  position: relative;
+}
+.specific::before {
+  content: "";
+  z-index: -1;
+  width: 265px;
+  height: 350px;
+  background-image: url(/assets/img/VectorV.svg);
+  background-size: cover;
+  position: absolute;
+  background-repeat: no-repeat;
+  right: 25.9%;
+  top: 15.6%;
+  transform: scale(1.75);
+}
+.specific::after {
+  content: "";
+  z-index: -2;
+  width: 500px;
+  height: 500px;
+  background-image: url(/assets/img/frezer/d26ab7b06facf3bd4f1357e6bbdfbb75.png);
+  position: absolute;
+  background-size: cover;
+  background-repeat: no-repeat;
+  left: 67.5%;
+  top: 5.5%;
+  transform: scale(1.35);
 }
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
@@ -464,8 +515,32 @@ body .variety-box .checkmark:last-child::after {
   body .variety-box .checkmark::before {
     top: 0;
   }
+  .specific::after {
+    width: 100%;
+    right: 0;
+    opacity: 0.7;
+    left: auto;
+    background-size: contain;
+    top: auto;
+    bottom: 0;
+    transform: none;
+    background-position: right;
+  }
+  .specific::before {
+    display: none;
+  }
+  .main_content_wrapper.container {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 @media (max-width: 920px) {
+  .blocks.card-grid {
+    grid-template-columns: 1fr;
+  }
+  .company_advantages_wrap .company_advantages_grid {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 600px) {
 }
