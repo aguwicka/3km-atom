@@ -375,7 +375,7 @@ body .checkmark-block::before {
   right: 0;
   content: "";
   width: 4px;
-
+  display: none;
 }
 body .checkmark {
   position: relative;
@@ -387,7 +387,36 @@ body .checkmark::before {
   content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
   width: 50px;
   height: 50px;
+  z-index: 20;
+  position: relative;
 }
+body .checkmark::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: calc(100% + 30px);
+  border-left: 4px solid red;
+  content: "";
+  left: 24px;
+
+}
+body .checkmark:first-child::after {
+  height: calc(50% + 30px);
+  top:  50%;
+  left: 24px;
+
+}
+body .checkmark:last-child::after {
+  height: calc(50% + 30px);
+  bottom:  50%;
+  left: 24px;
+  top: auto;
+}
+
+body .variety-box .checkmark:last-child::after {
+  bottom: 100%;
+}
+
 .tehnology {
   background-image: url("/assets/img/stroy/2ebdefe6d041769772e822eb88b220d5.jpg");
   padding-top: 120px;
@@ -406,15 +435,24 @@ body .checkmark::before {
 }
 .tehnology .container{
   margin-top: 0;
-  max-height: 0;
+  margin-bottom: 0;
   z-index: 20;
     position: relative;
 } 
 .white-h1 {
   color: #fff;
 }
-.tehnology .about-title-block p {
+.tehnology .about-info p {
   color: #fff;
+}
+.tehnology .about-info span {
+  color: #fff;
+  font-family: Gilroy;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 73.5px;
+  text-align: left;
+
 }
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
@@ -423,6 +461,9 @@ body .checkmark::before {
   }
 }
 @media only screen and (max-width: 1080px) {
+  body .variety-box .checkmark::before {
+    top: 0;
+  }
 }
 @media (max-width: 920px) {
 }
