@@ -11,7 +11,15 @@ $(document).ready(function () {
 
   $('.menu_btn').click(function () {
     $('.header_menus_mob').toggleClass('active');
+
+    var src = $('.menu_btn').attr("src");
+    if (src === "assets/img/menu.svg") {
+      $('.menu_btn').attr("src", "assets/img/close.svg");
+    } else {
+      $('.menu_btn').attr("src", "assets/img/menu.svg");
+    }
   });
+
 
 
 
