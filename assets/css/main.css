@@ -1674,6 +1674,24 @@ input {
     gap: 10px;
 }
 
+.tb-bg {
+    position: relative;
+}
+
+.tb-bg::before {
+    content: "";
+    z-index: -1;
+    width: 1014px;
+    height: 928px;
+    background-image: url(/assets/img/sverlenie/image_32.jpg);
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
+    right: -21.4%;
+    top: -17%;
+    border-radius: 20px;
+}
+
 .table-row {
     display: grid;
     gap: 10px;
