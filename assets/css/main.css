@@ -3470,6 +3470,7 @@ input {
         margin-top: -186px;
         transform: scale(0.55);
         width: 145%;
+        display: block;
     }
 
     .work_solution_wrapper .info_grid_count {
