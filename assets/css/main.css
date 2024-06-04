@@ -2040,16 +2040,15 @@ input {
 
 .about-title-text p {
     font-family: Roboto Flex;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: 500;
-    line-height: 35px;
+    line-height: 21px;
     text-align: right;
-
 }
 
 .about-info {
     margin-top: 120px;
-    margin-bottom: 80px;
+    margin-bottom: 55px;
 }
 
 .span-gray {
@@ -2465,9 +2464,460 @@ input {
     padding: 60px 60px 18px 35px;
 }
 
+.abb .about-title h2 {
+    font-size: 46px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+}
+
+.abb .about-title h2 span {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: left;
+}
+
+.abb .about-title-text {
+    width: 50%;
+}
+
+.abb .about-text p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: left;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.box-about {
+    display: flex;
+    width: 100%;
+    position: relative;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card-about-left {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.card-about-left .card-about-item {
+    border-radius: 30px;
+    background-color: #1F1F1F;
+    /* margin-bottom: 16px; */
+    padding: 0 25px 0px 25px;
+}
+
+
+.card-about-right {
+    width: 40%;
+    border-radius: 30px;
+    padding: 25px;
+    background-color: #E62900;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-about-item.one {
+    width: 100%;
+    padding-top: 3%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-about-item.two {
+    width: 43%;
+    padding-top: 12%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-about-item.three {
+    width: 43%;
+    padding-top: 12%;
+    overflow: hidden;
+    position: relative;
+}
+
+.card-about-item h2 {
+    font-family: Gilroy;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 40.66px;
+    text-align: left;
+}
+
+.card-about-item p {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    color: #ABABAB;
+    margin-top: 15px;
+}
+
+.card-about-right h2 {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.card-about-right p {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.card-about-right::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/card-img/logo-back.png');
+    background-repeat: no-repeat;
+    top: 45%;
+    left: 19%;
+    transform: scale(0.7);
+}
+
+.card-about-item.one::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/about/150.svg');
+    background-repeat: no-repeat;
+    top: 0%;
+    left: 40%;
+    transform: scale(0.8);
+}
+
+.card-about-item.two::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/about/10.svg');
+    background-repeat: no-repeat;
+    top: -5%;
+    left: 40%;
+    transform: scale(0.8);
+}
+
+.card-about-item.three::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('/assets/img/about/map.svg');
+    background-repeat: no-repeat;
+    top: -5%;
+    left: 55%;
+    transform: scale(0.8);
+}
+
+
+.about-info .about-title h2 {
+    font-family: Gilroy;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 83px;
+    text-align: left;
+
+}
+
+.about-info .about-title h2 span {
+    font-family: Gilroy;
+    font-size: 53px;
+    font-weight: 600;
+    line-height: 58px;
+    text-align: left;
+}
+
+
+.about-info .about-title-text {
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32.64px;
+    text-align: right;
+    width: 30%;
+}
+
+.about-info .about-description {
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+}
+
+.about-description span {
+    color: #E62900;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: left;
+
+}
+
+.about-bbx {
+    display: flex;
+    width: 100%;
+    gap: 35px;
+}
+
+.about-description {
+    width: 57%;
+}
+
+.about-description-img {
+    background: url(/assets/img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+    background-size: cover;
+    width: 732px;
+    height: 680px;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about-description li {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 38px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
+
+    .about-info .about-title h2 {
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    .about-info .about-title h2 span {
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: left;
+    }
+
+
+    .about-info .about-title-text {
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: right;
+        width: 40%;
+    }
+
+    .about-info .about-description {
+        font-family: Gilroy;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 38px;
+        text-align: left;
+    }
+
+    .about-description span {
+        color: #E62900;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+
+    }
+
+    .about-bbx {
+        display: flex;
+        width: 100%;
+        gap: 35px;
+    }
+
+    .about-description {
+        width: 57%;
+    }
+
+    .about-description-img {
+        background: url(/assets/img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+        background-size: cover;
+        width: 488px;
+        height: 453px;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .about-description li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 7px;
+    }
+
+
+
+    .abb .about-title-text {
+        width: 40%;
+    }
+
+    .box-about {
+        display: flex;
+        width: 100%;
+        position: relative;
+        gap: 20px;
+        align-items: stretch;
+    }
+
+    .card-about-left {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .card-about-left .card-about-item {
+        border-radius: 30px;
+        background-color: #1F1F1F;
+        /* margin-bottom: 16px; */
+        padding: 0 25px 0px 25px;
+    }
+
+
+    .card-about-right {
+        width: 40%;
+        border-radius: 30px;
+        padding: 25px;
+        background-color: #E62900;
+        height: 450px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-about-item.one {
+        width: 100%;
+        padding-top: 5%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-about-item.two {
+        width: 42%;
+        padding-top: 15%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-about-item.three {
+        width: 42%;
+        padding-top: 15%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-about-item h2 {
+        font-family: Gilroy;
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .card-about-item p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        color: #ABABAB;
+        margin-top: 15px;
+    }
+
+    .card-about-right h2 {
+        font-size: 25px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .card-about-right p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 19px;
+        text-align: left;
+        margin-top: 20px;
+    }
+
+    .card-about-right::before {
+        content: "";
+        position: absolute;
+        width: 140%;
+        height: 100%;
+        background: url('/assets/img/card-img/logo-back.png');
+        background-repeat: no-repeat;
+        top: 40%;
+        left: -5%;
+        transform: scale(0.5);
+    }
+
+    .card-about-item.one::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 140%;
+        background: url('/assets/img/about/150.svg');
+        background-repeat: no-repeat;
+        top: -19%;
+        left: 22%;
+        transform: scale(0.6);
+    }
+
+    .card-about-item.two::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('/assets/img/about/10.svg');
+        background-repeat: no-repeat;
+        top: -15%;
+        left: 20%;
+        transform: scale(0.6);
+    }
+
+    .card-about-item.three::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('/assets/img/about/map.svg');
+        background-repeat: no-repeat;
+        top: -15%;
+        left: 37%;
+        transform: scale(0.6);
+    }
 
 
     .work_solution_wrapper .content_title {
@@ -3460,8 +3910,8 @@ input {
     }
 
     .about-info {
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 0px;
     }
 
     .jobs_types_wrapper {
@@ -3470,6 +3920,241 @@ input {
 }
 
 @media (max-width: 1080px) {
+
+
+    .about-description ul {
+        padding: 0;
+    }
+    .about-info .about-title h2 {
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: left;
+    }
+
+    .about-info .about-title h2 span {
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 29px;
+        text-align: left;
+    }
+
+
+    .about-info .about-title-text {
+        font-family: Gilroy;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 32px;
+        text-align: right;
+        width: 40%;
+    }
+
+    .about-info .about-description {
+        font-family: Gilroy;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 38px;
+        text-align: left;
+    }
+
+    .about-description span {
+        color: #E62900;
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+
+    }
+
+    .about-bbx {
+        display: flex;
+        width: 100%;
+        /* gap: 35px; */
+    }
+
+    .about-description {
+        width: 100%;
+    }
+
+    .about-description-img {
+        background: url(/assets/img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+        background-size: cover;
+        width: 488px;
+        height: 453px;
+        border-radius: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: none;
+    }
+
+    .about-description li {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 7px;
+    }
+
+
+
+
+    .mob .about-title-text p {
+        display: block;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+
+    .mob .about-description-img{width: 100%;height: 260px;display: block;}
+
+    .abb .about-title-text {
+        width: 100%;
+    }
+
+    .box-about {
+        display: flex;
+        width: 100%;
+        position: relative;
+        gap: 20px;
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .card-about-left {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: space-between;
+    }
+
+    .card-about-left .card-about-item {
+        border-radius: 10px;
+        background-color: #1F1F1F;
+        /* margin-bottom: 16px; */
+        padding: 0 10px 0px 10px;
+    }
+
+
+    .card-about-right {
+        width: 95%;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #E62900;
+        height: 145px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 25px;
+    }
+
+    .card-about-item.one {
+        width: 100%;
+        padding-top: 5%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 3%;
+    }
+
+    .card-about-item.two {
+        width: 42%;
+        padding-top: 12%;
+        overflow: hidden;
+        position: relative;
+        padding-bottom: 2%;
+    }
+
+    .card-about-item.three {
+        width: 42%;
+        padding-top: 12%;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .card-about-item h2 {
+        font-family: Gilroy;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .card-about-item p {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: left;
+        color: #ABABAB;
+        margin-top: 15px;
+    }
+
+    .card-about-right h2 {
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 16px;
+        /* text-align: left; */
+        padding-top: 0px;
+    }
+
+    .card-about-right p {
+        font-size: 8px;
+        font-weight: 400;
+        line-height: 10px;
+        text-align: left;
+        margin-top: 20px;
+        width: 85%;
+    }
+
+    .card-about-right::before {
+        content: "";
+        position: absolute;
+        width: 148%;
+        height: 230%;
+        background: url('/assets/img/card-img/logo-back.png');
+        background-repeat: no-repeat;
+        top: -52%;
+        left: 7%;
+        transform: scale(0.4);
+    }
+
+    .card-about-item.one::before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 240%;
+        background: url('/assets/img/about/150.svg');
+        background-repeat: no-repeat;
+        top: -71%;
+        left: -26%;
+        transform: scale(0.25);
+    }
+
+    .card-about-item.two::before {
+        content: "";
+        position: absolute;
+        width: 202%;
+        height: 150%;
+        background: url('/assets/img/about/10.svg');
+        background-repeat: no-repeat;
+        top: -50%;
+        left: -34%;
+        transform: scale(0.3);
+    }
+
+    .card-about-item.three::before {
+        content: "";
+        position: absolute;
+        width: 195%;
+        height: 160%;
+        background: url('/assets/img/about/map.svg');
+        background-repeat: no-repeat;
+        top: -52%;
+        left: -12%;
+        transform: scale(0.3);
+    }
+
 
 
     .frezer .checkmark span {
@@ -4624,11 +5309,11 @@ input {
     .about-info .about-title-block {
         flex-wrap: wrap;
         gap: 10px;
-        margin-left: 25px;
+        /* margin-left: 25px; */
     }
 
     .proiz .about-info .about-title-block {
-       
+
         margin-left: 20px;
     }
 
@@ -4646,6 +5331,7 @@ input {
         font-size: 14px;
         line-height: 20px;
         text-align: left;
+        display: none;
     }
 
 
@@ -4765,6 +5451,7 @@ input {
 
     .mob {
         display: block;
+        padding: 15px;
     }
 
     .dec {

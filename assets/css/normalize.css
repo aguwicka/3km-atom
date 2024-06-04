@@ -640,6 +640,49 @@ body .obrabotka_wrapper  .jobs_inf  {
 .delivery_desc .map svg {
   width: 100%;
 }
+.preim .grid { 
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.block-title {
+  font-family: Gilroy;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 48.15px;
+  text-align: left;
+  color: white;
+}
+.text-block {
+  font-family: Gilroy;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  color: #ABABAB;
+
+}
+.content-block {
+  background-color: #1F1F1F;
+  margin-top: 10px;
+  padding: 20px;
+  border-radius: 30px;
+  position: relative;
+  height: 370px;
+}
+.red .content-block {
+  background: #E62900;
+}
+.preim {
+  background-color: #000;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.content-block .grid-logo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
     font-size: 30px;
@@ -769,6 +812,47 @@ body .obrabotka_wrapper  .jobs_inf  {
     z-index: 0;
     opacity: 0.6;
     
+  }
+  .preim .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .block-title {
+    font-family: Gilroy;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 18px;
+    text-align: left;
+    
+  }
+  .text-block {
+    font-family: Gilroy;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: left;
+    
+  
+  }
+  .preim .grid-item {
+    background: #1F1F1F;
+    border-radius: 10px;
+  }
+  .preim .content-block {
+    min-height: 150px;
+    
+    max-height: 250px;
+    padding: 10px;
+  }
+  .preim .grid-item svg {
+    width: 50px;
+    height: auto;
+  }
+  .preim .grid-item .grid-logo {
+    width: 70%;
+    height: auto;
+  }
+  .preim .grid-item.red{
+    background-color: #E62900;
   }
 }
 @media (max-width: 600px) {
