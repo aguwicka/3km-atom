@@ -634,6 +634,12 @@ body .obrabotka_wrapper  .jobs_inf  {
   background-position: right;
  
 }
+.delivery_grid_item.red {
+  background-color: #E62900;
+}
+.delivery_desc .map svg {
+  width: 100%;
+}
 @media only screen and (max-width: 1500px) {
   .bg-black .card-item h2 span{
     font-size: 30px;
@@ -646,6 +652,9 @@ body .obrabotka_wrapper  .jobs_inf  {
   .contact_info_wrapper .contacts_grid_wrapper {
     grid-template-columns: 1fr 1fr 1fr;
 
+  }
+  .delivery_grid_wrapper.deliv {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media only screen and (max-width: 1080px) {
@@ -732,6 +741,34 @@ body .obrabotka_wrapper  .jobs_inf  {
   }
   .obrabotka_wrapper::after {
     opacity: 0.6;
+  }
+  .delivery_grid_wrapper.deliv {
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 80px;
+  }
+  .delivery_wrapper.main_content_wrapper {
+    position: relative;
+  }
+  .delivery_grid_item {
+    z-index: 20;
+  }
+  .delivery_grid_item:nth-child(5) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    background: rgb(31 31 31 / 52%);
+  } 
+  .delivery_grid_item.red {
+    position: absolute;
+    bottom: 0;
+    width: var(--container-width);
+    left: var(--container-left);
+    right: var(--container-right);
+    background-color: unset;
+    z-index: 0;
+    opacity: 0.6;
+    
   }
 }
 @media (max-width: 600px) {

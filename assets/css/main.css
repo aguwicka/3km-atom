@@ -1094,7 +1094,7 @@ input {
     border: 2px solid red;
     position: absolute;
     width: 200px;
-    margin-top: -20px;
+    margin-top: -35px;
 }
 
 .drob_border h2 {
@@ -2202,6 +2202,7 @@ input {
     color: #676E7C;
 }
 
+
 .checkmark::before {
     content: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='25' fill='%23E62900'/%3E%3Cpath d='M10 22.0909L23.2571 38L39 13' stroke='white' stroke-width='3'/%3E%3C/svg%3E");
     width: 50px;
@@ -2340,6 +2341,8 @@ input {
     gap: 30px;
 }
 
+
+
 .sverche .checkmark {
     display: flex;
     align-items: stretch;
@@ -2456,6 +2459,10 @@ input {
 
 .work_solution_wrapper .solutin_info_grid::before {
     display: none;
+}
+
+.description .drtwo .drob_info_grid_item1 {
+    padding: 60px 60px 18px 35px;
 }
 
 /** MOBILE **/
@@ -3465,6 +3472,18 @@ input {
 @media (max-width: 1080px) {
 
 
+    .frezer .checkmark span {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+
+    }
+
+    .frezer .checkmark::before {
+        transform: scale(0.5);
+    }
+
     .work_solution_wrapper .solutin_info_grid::before {
         left: -11%;
         margin-top: -186px;
@@ -3532,11 +3551,11 @@ input {
     }
 
     .description .drtwo .drob_info_grid_item1 {
-        padding: 60px 60px 18px 5px;
+        padding: 60px 60px 18px 35px;
     }
 
     .description .drob_info_grid_item1 {
-        padding: 15px 5px;
+        padding: 15px 15px 5px;
     }
 
     .description .drob_border::before {
@@ -4606,6 +4625,11 @@ input {
         flex-wrap: wrap;
         gap: 10px;
         margin-left: 25px;
+    }
+
+    .proiz .about-info .about-title-block {
+       
+        margin-left: 20px;
     }
 
     .about-title h2 {
