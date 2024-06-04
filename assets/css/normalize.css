@@ -528,7 +528,7 @@ body .bg-black .card-item {
   padding: 46px 40px;
   background: rgba(240, 240, 240, 1);
 }
-.contacts_grid_wrapper .item .contacts_grid_item{
+.contacts_grid_wrapper .contactitem .contacts_grid_item{
   height: 385px;
 }
 .contacts_title {
