@@ -8,6 +8,13 @@
 
 @font-face {
     font-family: 'Gilroy';
+    src: url('../font/gillroy/GILROY-REGULAR.TTF') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
     src: url('../font/gillroy/Gilroy-SemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
@@ -283,7 +290,7 @@ img {
     z-index: -1;
     width: 89%;
     height: 100%;
-    background-image: url('/assets/img/VectorV.svg');
+    background-image: url('../img/VectorV.svg');
     position: absolute;
     background-repeat: no-repeat;
     left: 60px;
@@ -486,6 +493,10 @@ img {
 
 .front-mini .card-top-wrapper img.bg {
     filter: brightness(0.6);
+}
+
+.delivery-map-mobile{
+    display: none;
 }
 
 .card-mini_form_button {
@@ -925,7 +936,7 @@ input {
     z-index: -1;
     width: 100%;
     height: 118%;
-    background-image: url('/assets/img/VectorV.svg');
+    background-image: url('../img/VectorV.svg');
     position: absolute;
     background-repeat: no-repeat;
     left: -165px;
@@ -965,7 +976,7 @@ input {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     z-index: 2;
 }
 
@@ -1084,9 +1095,14 @@ input {
 }
 
 .drob_info_grid_item {
+    height: fit-content;
     padding: 46px 40px;
     background: rgba(240, 240, 240, 1);
     border-radius: 30px;
+}
+
+.drob_info_item img{
+    height: 502px;
 }
 
 .about-dr .drob_border::before {
@@ -1111,7 +1127,7 @@ input {
     border: 2px solid red;
     position: absolute;
     width: 200px;
-    margin-top: -35px;
+    margin-top: 0px;
 }
 
 .drob_border h2 {
@@ -1134,6 +1150,7 @@ input {
 }
 
 .drob_title {
+    font-family: Gilroy;
     margin-top: 25px;
     font-size: 40px;
     color: rgba(103, 110, 124, 1);
@@ -1141,7 +1158,8 @@ input {
 }
 
 .drob_info_grid_item p {
-    margin-top: 20px;
+    font-family: Gilroy;
+    margin-top: 15px;
     line-height: 36px;
 }
 
@@ -1153,6 +1171,8 @@ input {
     -o-background-size: cover;
     background-size: cover;
 }
+
+
 
 .drob_solutin_wrapper:after {
     content: '';
@@ -1200,6 +1220,18 @@ input {
     margin-top: 55px;
 }
 
+.drob_solutin_wrapper .content_title h2{
+    font-family: Gilroy;
+    line-height: 68px;
+    width: max-content;
+}
+.drob_solutin_wrapper .content_title h2 span{
+    font-family: Gilroy;
+    font-weight: 600;
+    font-size: 69px;
+    line-height: 68px;
+}
+
 .prem .drob_technology_grid {
     display: flex;
     justify-content: space-evenly;
@@ -1240,6 +1272,8 @@ input {
 }
 
 .drob_technology_desc {
+    font-family: Gilroy;
+    font-weight: 400;
     margin-top: 20px;
     font-size: 25px;
     color: rgba(255, 255, 255, 1);
@@ -1408,7 +1442,7 @@ input {
 }
 
 .rezka_banner {
-    /* background: url(/assets/img/rezka/b29b804f30a3217e4e07dc4eeebbfa76.jpg) no-repeat center center fixed; */
+    /* background: url(../img/rezka/b29b804f30a3217e4e07dc4eeebbfa76.jpg) no-repeat center center fixed; */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1497,12 +1531,12 @@ input {
     padding: 30px;
     border-radius: 30px;
     background: rgba(245, 248, 250, 1);
+    margin-top: 20px;
 }
 
 .contacts_title {
+    font-size: 45px;
     color: rgba(103, 110, 124, 1);
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .contacts_desc {
@@ -1512,6 +1546,7 @@ input {
 .contacts_inf {
     font-size: 25x;
     color: rgba(230, 41, 0, 1);
+    margin-top: 10px;
 }
 
 .drob_info_grid_item p a {
@@ -1584,8 +1619,8 @@ input {
 .line-page.service {
     display: flex;
     gap: 15px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .line-page.service img {
@@ -1595,11 +1630,12 @@ input {
 
 .line-page.service.sver img {
     width: 885px;
-    height: 585px;
+    height: 600px;
     border-radius: 30px;
 }
 
 .sver .service-info h2 {
+    font-family: Gilroy;
     font-size: 40px;
     font-weight: 600;
     line-height: 42px;
@@ -1609,6 +1645,7 @@ input {
 
 
 .sver .service-info span {
+    font-family: Gilroy;
     font-size: 25px;
     font-weight: 400;
     line-height: 36px;
@@ -1620,12 +1657,12 @@ input {
     border: 2px solid red;
     position: absolute;
     width: 200px;
-    margin-top: -20px;
+    margin-top: -25px;
 }
 
 .line-page.service .service-info {
-    padding: 35px;
-    padding-top: 80px;
+    padding: 70px 40px 35px 40px;
+    height: max-content;
     width: 50%;
     position: relative;
 }
@@ -1643,7 +1680,7 @@ input {
 .equipment-title {
     display: flex;
     justify-content: space-between;
-    padding-top: 120px;
+    padding-top: 95px;
 }
 
 .equipment-title h2 {
@@ -1673,8 +1710,8 @@ input {
 }
 
 .equipment-body {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 65px;
+    padding-bottom: 75px;
     display: flex;
     /* gap: 30px; */
 }
@@ -1750,7 +1787,7 @@ input {
     z-index: -1;
     width: 1014px;
     height: 928px;
-    background-image: url(/assets/img/sverlenie/image_32.jpg);
+    background-image: url(../img/sverlenie/image_32.jpg);
     background-size: contain;
     position: absolute;
     background-repeat: no-repeat;
@@ -1934,7 +1971,7 @@ input {
     height: 600px;
     background-size: auto 100%;
     border-radius: 30px;
-    padding: 30px;
+    padding: 35px 55px 50px 40px;
     position: relative;
 }
 
@@ -1946,8 +1983,8 @@ input {
 }
 
 .additional-services {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 95px;
+    padding-bottom: 90px;
 }
 
 .additional-card-number {
@@ -1977,15 +2014,26 @@ input {
     border-radius: 30px;
 }
 
+.additional-card-title{
+    font-family: Gilroy;
+    font-size: 35px;
+    line-height: 40px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
 .additional-card>div {
     position: relative;
     z-index: 10;
 }
 
 .additional-card .additional-card-text {
+    font-family: Gilroy;
+    font-size: 22px;
+    line-height: 25px;
     position: absolute;
-    left: 20px;
-    bottom: 30px;
+    left: 40px;
+    bottom: 50px;
 }
 
 .btn {
@@ -2065,8 +2113,8 @@ input {
 }
 
 .about-info {
-    margin-top: 120px;
-    margin-bottom: 55px;
+    margin-top: 95px;
+    margin-bottom: 95px;
 }
 
 .span-gray {
@@ -2238,6 +2286,10 @@ input {
     color: rgba(103, 110, 124, 1);
 }
 
+.sverche .checkmark-block{
+    gap: 30px;
+}
+
 .checkmark-block {
     display: flex;
     flex-direction: column;
@@ -2292,7 +2344,7 @@ input {
     z-index: -1;
     width: 265px;
     height: 350px;
-    background-image: url('/assets/img/VectorV.svg');
+    background-image: url('../img/VectorV.svg');
     background-size: cover;
     position: absolute;
     background-repeat: no-repeat;
@@ -2306,7 +2358,7 @@ input {
     z-index: -1;
     width: 500px;
     height: 500px;
-    background-image: url('/assets/img/slesar/image 30.png');
+    background-image: url('../img/slesar/image 30.png');
     position: absolute;
     background-size: cover;
     background-repeat: no-repeat;
@@ -2603,7 +2655,7 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('/assets/img/card-img/logo-back.png');
+    background: url('../img/card-img/logo-back.png');
     background-repeat: no-repeat;
     top: 45%;
     left: 19%;
@@ -2615,7 +2667,7 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('/assets/img/about/150.svg');
+    background: url('../img/about/150.svg');
     background-repeat: no-repeat;
     top: 0%;
     left: 40%;
@@ -2627,7 +2679,7 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('/assets/img/about/10.svg');
+    background: url('../img/about/10.svg');
     background-repeat: no-repeat;
     top: -5%;
     left: 40%;
@@ -2639,7 +2691,7 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('/assets/img/about/map.svg');
+    background: url('../img/about/map.svg');
     background-repeat: no-repeat;
     top: -5%;
     left: 55%;
@@ -2651,14 +2703,15 @@ input {
     font-family: Gilroy;
     font-size: 69px;
     font-weight: 600;
-    line-height: 83px;
+    line-height: 70px;
     text-align: left;
-
+    width: max-content;
 }
 
 .about-info .about-title h2 span {
     font-family: Gilroy;
-    font-size: 53px;
+    text-transform: none;
+    font-size: 69px;
     font-weight: 600;
     line-height: 58px;
     text-align: left;
@@ -2702,7 +2755,7 @@ input {
 }
 
 .about-description-img {
-    background: url(/assets/img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+    background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
     background-size: cover;
     width: 732px;
     height: 680px;
@@ -2786,6 +2839,65 @@ input {
     justify-content: space-between;
 }
 
+.main_content_wrapper .drob_info_item img {
+    height: 522px;
+}
+.about-info-dop{
+    margin-top: 95px;
+    margin-bottom: 40px;
+}
+.about-dr.drob_info-dop .drob_info_grid_item{
+    height: 365px;
+}
+.card-about-right h2{
+    margin-top: 0;
+}
+.card-about-right h2, .card-about-right p{
+    font-family: Gilroy;
+}
+.work_item h2{
+    font-family: Gilroy;
+}
+.work_item h2 span{
+    font-family: Gilroy;
+}
+.form_wrapper h2{
+    font-family: Gilroy;
+}
+
+.work_solution-adv .content_title h2{
+    font-size: 69px;
+    line-height: 68px;
+    font-family: Gilroy;
+}
+.work_solution-adv .content_title h2 span{
+    font-size: 69px;
+    line-height: 68px;
+    color: #000;
+    font-family: Gilroy;
+    font-weight: 600;
+}
+.work_solution-adv .solution_text_grid p{
+    text-align: left;
+}
+.work_solution-adv .solutin_info_grid{
+    margin-top: 65px;
+}
+.work_solution-adv{
+    position: relative;
+}
+.work_solution-adv::before{
+    content: '';
+    position: absolute;
+    left: 60px;
+    bottom: 70px;
+    background-image: url(../img/VectorV2.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 774px;
+    height: 869px;
+    z-index: -1;
+}
 
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
@@ -2794,7 +2906,7 @@ input {
         content: "";
         width: 100%;
         height: 100%;
-        background: url(/assets/img/card-img/logo-back.png);
+        background: url(../img/card-img/logo-back.png);
         position: absolute;
         background-repeat: no-repeat;
         z-index: 1;
@@ -2857,7 +2969,7 @@ input {
     }
 
     .about-description-img {
-        background: url(/assets/img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+        background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
         background-size: cover;
         width: 488px;
         height: 453px;
@@ -2974,7 +3086,7 @@ input {
         position: absolute;
         width: 140%;
         height: 100%;
-        background: url('/assets/img/card-img/logo-back.png');
+        background: url('../img/card-img/logo-back.png');
         background-repeat: no-repeat;
         top: 40%;
         left: -5%;
@@ -2986,7 +3098,7 @@ input {
         position: absolute;
         width: 100%;
         height: 140%;
-        background: url('/assets/img/about/150.svg');
+        background: url('../img/about/150.svg');
         background-repeat: no-repeat;
         top: -19%;
         left: 22%;
@@ -2998,7 +3110,7 @@ input {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url('/assets/img/about/10.svg');
+        background: url('../img/about/10.svg');
         background-repeat: no-repeat;
         top: -15%;
         left: 20%;
@@ -3010,7 +3122,7 @@ input {
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url('/assets/img/about/map.svg');
+        background: url('../img/about/map.svg');
         background-repeat: no-repeat;
         top: -15%;
         left: 37%;
@@ -3197,7 +3309,7 @@ input {
         z-index: -1;
         width: 679px;
         height: 679px;
-        background-image: url(/assets/img/sverlenie/image_32.jpg);
+        background-image: url(../img/sverlenie/image_32.jpg);
         background-size: contain;
         position: absolute;
         background-repeat: no-repeat;
@@ -3215,10 +3327,19 @@ input {
 
     }
 
+    .equipment-body{
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
+
     .equip .equipment-body img {
         border-radius: 20px;
         /* width: 468px; */
         height: 100%;
+    }
+
+    .equipment-title{
+        padding-top: 65px;
     }
 
     .equip .equipment-title h2 {
@@ -3238,13 +3359,23 @@ input {
         width: 50%;
     }
 
+    .line-page.service{
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+
     .line-page.service .service-info {
-        padding-top: 40px;
+        padding: 45px 25px 25px 25px;
+    }
+
+    .sver .service-info h2::before{
+        margin-top: -15px;
+        width: 133px;
     }
 
     .line-page.service.sver img {
         width: 590px;
-        height: 390px;
+        height: 383px;
         border-radius: 30px;
     }
 
@@ -3325,7 +3456,7 @@ input {
         z-index: -1;
         width: 55%;
         height: 161%;
-        background-image: url('/assets/img/VectorV.svg');
+        background-image: url('../img/VectorV.svg');
         position: absolute;
         background-repeat: no-repeat;
         right: 8%;
@@ -3338,7 +3469,7 @@ input {
         z-index: -1;
         width: 60%;
         height: 134%;
-        background-image: url('/assets/img/slesar/image 30.png');
+        background-image: url('../img/slesar/image 30.png');
         position: absolute;
         background-repeat: no-repeat;
         left: 48%;
@@ -3383,7 +3514,7 @@ input {
         z-index: -1;
         width: 100%;
         height: 100%;
-        background-image: url('/assets/img/VectorV.svg');
+        background-image: url('../img/VectorV.svg');
         position: absolute;
         background-repeat: no-repeat;
         left: -110px;
@@ -3845,14 +3976,22 @@ input {
 
     .drob_info_grid_item {
         /* order: -1; */
+        padding: 30px 25px 30px 25px;
+    }
+
+    .drob_info_item img {
+        height: 305px;
     }
 
     .drob_title {
-        font-size: 20px;
+        font-size: 25px;
+        margin-top: 15px;
     }
 
     .drob_info_grid_item p {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
     }
 
     .drob_solution_grid {
@@ -3878,6 +4017,204 @@ input {
 
     .pokraska_grid_item:last-child {
         grid-column: auto / span 2;
+    }
+
+    .drob_technology_desc{
+        line-height: 26px;
+        margin-top: 13px;
+    }
+
+    .drob_solutin_wrapper .content_title h2{
+        font-size: 46px;
+        line-height: 45px;
+    }
+    .drob_solutin_wrapper .content_title h2 span{
+        font-size: 46px;
+        line-height: 45px;
+    }
+    .additional-card{
+        padding: 25px 35px 30px 25px;
+    }
+    .additional-card .additional-card-text{
+        left: 25px;
+        bottom: 30px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .additional-card-title{
+        font-size: 23px;
+        line-height: 26px;
+    }
+    .additional-services {
+        padding-top: 65px;
+        padding-bottom: 60px;
+    }
+    .additional-services .btn button{
+        width: 385px;
+        height: 60px;
+        font-size: 13px;
+        line-height: 16px;
+        border-radius: 13px;
+    }
+    .additional-services .btn{
+        margin-top: 40px;
+    }
+    .additional-services .additional-header h2{
+        font-size: 46px;
+        line-height: 45px;
+        width: max-content;
+    }
+    .additional-services .additional-header h2 span{
+        font-size: 46px;
+        line-height: 45px;
+    }
+    .additional-title-text p{
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .equipment-body .box-img.bg-im{
+        width: 385px;
+        height: 452px;
+    }
+    .equipment-block.card-item .sverche{
+        margin-right: 0;
+        width: 100%;
+    }
+    .equip .card-item span{
+        font-size: 15px;
+    }
+    .contacts_img svg{
+        width: 62px;
+        height: 62px;
+    }
+    .contacts_grid_item{
+        margin-top: 10px;
+    }
+    .contacts_grid_item{
+        padding: 20px;
+    }
+    .contacts_title{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .contacts_desc{
+        margin-top: 20px;
+    }
+    .contacts_inf{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .contacts_inf + .contacts_desc{
+        margin-top: 10px;
+    }
+    .contacts_grid_wrapper .contactitem .contacts_grid_item{
+        height: 215px;
+        border-radius: 20px;
+    }
+    .main_content_wrapper .drob_info_item img {
+        height: 358px;
+    }
+    .about-info {
+        margin-top: 65px;
+        margin-bottom: 65px;
+    }
+    .about-info .about-title h2{
+        font-size: 46px;
+        line-height: 55px;
+    }
+    .about-info .about-title h2 span{
+        font-size: 46px;
+        line-height: 55px;
+    }
+    .about-info-dop{
+        margin-top: 65px;
+        margin-bottom: 25px;
+        width: calc(100% - 40px);
+    }
+    .about-dr.drob_info-dop .drob_info_grid_item p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .drob_info-dop .drob_info_item img{
+        height: 400px !important;
+    }
+    .drob_info-dop .drob_info_item.drob_info_grid_item{
+        height: 235px !important;
+    }
+    .about-dr.drob_info-dop .drob_border::before {
+        margin-top: -10px;
+    }
+    .content_title-adv h2 span{
+        font-size: 46px;
+        line-height: 45px;
+    }
+    .advantages_wrapper-adv .advantages_grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .advantages_wrapper-adv .advantages_grid_item p{
+        font-family: Gilroy;
+        line-height: 24px;
+    }
+    .work_item.large h2{
+        margin-top: 32px;
+    }
+    .work_item_card-mini-1 .cart-title-mini{
+        font-size: 23px;
+        line-height: 24px;
+    }
+    .form_wrapper h2 {
+        line-height: 52px;
+    }
+    .form_desc{
+        margin-top: 20px;
+    }
+    .form-container{
+        justify-content: center;
+    }
+    .form_wrapper{
+        padding: 130px 20px;
+    }
+    .form-name, .form-phone, .form-submit{
+        height: 61px;
+        padding-top: 0;
+        padding-bottom: 0;
+        border-radius: 13px;
+        min-width: 185px;
+        max-width: 185px;
+    }
+    .form-name{
+        padding-left: 25px;
+    }
+    .input-group{
+        min-width: 244px;
+        max-width: 244px;
+    }
+    .form-phone{
+        min-width: 140px;
+        max-width: 140px;
+    }
+    .form-submit{
+        min-width: 230px;
+        max-width: 230px;
+    }
+    .flag {
+        top: 17px;
+        left: 25px;
+    }
+    .form-container{
+        margin-top: 40px;
+    }
+    .form-confluence{
+        margin-top: 13px;
+    }
+    .work_solution-adv .content_title h2{
+        font-size: 46px;
+        line-height: 45px;
+    }
+    .work_solution-adv::before{
+        bottom: 30px;
+        width: 574px;
+        height: 669px;
     }
 }
 
@@ -4092,6 +4429,344 @@ input {
     .equip .equipment-body img {
         width: 100% !important;
     }
+
+    .sverche .checkmark-block{
+        gap: 20px;
+    }
+    .bg-black .card-item{
+        padding: 30px 10px;
+    }
+    .sverche .checkmark{
+        gap: 10px;
+    }
+    .equip .checkmark::before {
+        transform: scale(0.6) !important;
+        margin-top: -8px;
+    }
+    .line-page.service{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .drob_solutin_wrapper .content_title h2 span{
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .delivery_wrapper.main_content_wrapper .content_title h2{
+        font-family: Gilroy;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .delivery_wrapper.main_content_wrapper .content_title h2 br{
+        display: none;
+    }
+    .delivery_grid_wrapper.deliv{
+        margin-top: 20px;
+        gap: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+    .delivery_grid_item{
+        width: calc(46.5% - 10px);
+        padding: 15px 8px;
+    }
+    .delivery_grid_item:nth-last-child(2){
+        width: 100%;
+    }
+    .delivery_count{
+        font-family: Gilroy;
+        display: block;
+        width: fit-content;
+    }
+    .grid-desc{
+        margin-top: 10px;
+        font-family: Gilroy;
+        font-size: 12px !important;
+        line-height: 16px;
+        font-weight: 400;
+    }
+    .delivery_grid_item.red .map{
+        display: none;
+    }
+    .delivery-map-mobile{
+        display: block;
+        margin-left: -13px;
+    }
+    .delivery_grid_item.red{
+        opacity: 1;
+        padding-bottom: 50px;
+    }
+    .additional-card{
+        padding: 10px 10px 20px 10px !important;
+        border-radius: 10px;
+        height: 180px !important;
+    }
+    .additional-card .additional-card-text{
+        left: 10px;
+        bottom: 20px;
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .additional-card-title{
+        font-size: 11px;
+        line-height: 12px;
+        margin-top: 0;
+    }
+    .additional-card-header svg{
+        width: 10px;
+        height: 10px;
+        margin-top: 12px;
+    }
+    .additional-services .btn {
+        margin-top: 15px;
+    }
+    .additional-services .btn button{
+        width: 100%;
+    }
+    .additional-services .additional-header h2{
+        line-height: 24px !important;
+        margin-bottom: 13px;
+    }
+    .additional-services .additional-header h2 span{
+        font-size: 25px;
+        line-height: 24px;
+    }
+    .contact_info_wrapper .contacts_grid_wrapper .contactitem{
+        position: relative;
+    }
+    .contacts_img{
+        width: fit-content;
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+    .contacts_title{
+        font-size: 20px !important;
+        line-height: 21px;
+    }
+    .contact_info_wrapper .contacts_grid_wrapper{
+        gap: 15px;
+    }
+    .contacts_grid_wrapper .contactitem {
+        width: 47%;
+    }
+    .contactitem .contacts_grid_item{
+        padding: 60px 10px 20px 10px;
+        border-radius: 10px;
+    }
+    .contactitem:first-child .contacts_grid_item{
+        padding: 30px 10px 20px 10px;
+        height: fit-content;
+    }
+    .contacts_img svg {
+        width: 50px;
+        height: 50px;
+    }
+    .contacts_title {
+        font-size: 15px !important;
+        line-height: 16px;
+    }
+    .contactitem:first-child .contacts_grid_item .contacts_title {
+        font-size: 20px !important;
+        line-height: 21px;
+    }
+    .contact_info_wrapper.main_content_wrapper{
+        padding: 20px 20px 0 20px;
+    }
+    .mail-br{
+        display: none;
+    }
+    .main_content_wrapper .drob_info_grid_item p{
+        line-height: 21px;
+    }
+    .main_content_wrapper .drob_info_grid_item{
+        padding: 50px 20px 30px 20px;
+        border-radius: 20px;
+    }
+    .main_content_wrapper .drob_border::before{
+        width: 150px;
+        margin-top: -15px;
+    }
+    .main_content_wrapper .drob_alert{
+        border-radius: 10px;
+        padding: 15px 20px;
+    }
+    .card-about-item.two{
+        width: 41% !important;
+    }
+    .card-about-item h2{
+        font-size: 13px !important;
+        line-height: 13px !important;
+    }
+    .card-about-item.two::before{
+        width: 207% !important;
+        height: 161% !important;
+        top: -56% !important;
+        left: -37% !important;
+        transform: scale(0.27) !important;
+    }
+    .card-about-item.three::before{
+        width: 200% !important;
+        height: 165% !important;
+        top: -57% !important;
+        left: -16% !important;
+        transform: scale(0.27) !important;
+    }
+    .about-info .about-title h2{
+        padding-top: 30px;
+    }
+    .abb .about-title-text{
+        display: none;
+    }
+    .abb .about-text p{
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    .abb .about-text p br{
+        display: none;
+    }
+    .about-info .about-title h2{
+        width: 100%;
+    }
+    .about-description::before{
+        left: 39px !important;
+    }
+    .advantages_wrapper-adv .advantages_grid{
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 25px;
+    }
+    .advantages_wrapper-adv .advantages_grid_item p{
+        font-family: Gilroy;
+        line-height: 9px;
+        margin-top: 5px;
+        line-height: 11px;
+    }
+    .advantages_wrapper .content_title h2{
+        width: max-content;
+    }
+    .content_title-adv h2 span{
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .advantages_wrapper .advantages_item_title{
+        padding-top: 13px;
+    }
+    .form-container{
+        width: 100%;
+    }
+    .form-name, .form-phone, .form-submit{
+        margin-right: 0;
+        max-width: 100%;
+    }
+    .input-group{
+        max-width: 100%;
+    }
+    .form_wrapper {
+        padding: 40px 20px;
+    }
+    .solution_text_grid{
+        margin-top: 0;
+        gap: 0;
+    }
+    .work_solution-adv .solutin_info_grid {
+        margin-top: 40px;
+    }
+    .work_solution-adv .solutin_info_grid .info_grid_count{
+        padding-bottom: 10px;
+    }
+    .work_solution-adv .solutin_info_grid .info_grid_itle{
+        margin-top: 10px !important;
+    }
+    .work_solution-adv .solutin_info_grid .info_grid_itle{
+        font-size: 15px !important;
+        line-height: 16px !important;
+    }
+    .work_solution-adv .solutin_info_grid .info_grid_text{
+        margin-top: 10px !important;
+        font-size: 12px  !important;
+        line-height: 17px !important;
+        font-family: Gilroy;
+    }
+    .work_solution-adv .solutin_info_grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+    .work_solution-adv::before{
+        display: none;
+    }
+    .work_solution_wrapper .solutin_info_grid::before{
+        margin-top: -350px !important;
+    }
+    .work_solution-adv .solutin_info_grid .info_grid_count{
+        font-family: Gilroy;
+        font-size: 32px  !important;
+        line-height: 1 !important;
+    }
+    .work_solution-adv{
+        padding-bottom: 0;
+    }
+    .footer_info_wrap{
+        border-radius: 20px;
+    }
+    .work_cheme-adv .work_item.large h2{
+        font-size: 25px  !important;
+        line-height: 24px !important;
+        margin-top: 0;
+    }
+    .work_cheme-adv .work_card_count{
+        font-family: Gilroy;
+    }
+    .work_cheme-adv .work_item.work_item_card{
+        padding-top: 0;
+        padding-right: 0;
+    }
+    .work_cheme-adv .work_card_title{
+        font-family: Gilroy;
+    }
+    .work_cheme-adv .work_wrapper{
+        gap: 40px 15px;
+    }
+    .peherps_wrapepr-adv .peherps_count{
+        line-height: 31px;
+        font-family: Gilroy;
+    }
+    .peherps_wrapepr-adv .peherps_border{
+        margin-top: 10px;
+    }
+    .peherps_wrapepr-adv .grid-title{
+        margin-top: 15px;
+        font-family: Gilroy;
+        font-size: 14px  !important;
+        line-height: 14px !important;
+        font-weight: 600;
+    }
+    .peherps_wrapepr-adv .grid-desc{
+        font-size: 8px  !important;
+        line-height: 10px !important;
+    }
+    .preim-adv{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .preim-adv .content-block{
+        padding-top: 0;
+        height: fit-content;
+        min-height: 155px;
+    }
+    .preim-adv .block-title{
+        margin-bottom: 10px;
+    }
+    .preim-adv .grid{
+        gap: 10px;
+    }
+}
+
+@media (max-width: 375.9px) {
+    .contacts_inf {
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 920px) {
@@ -4132,7 +4807,7 @@ input {
         z-index: -1;
         width: 129%;
         height: 130%;
-        background-image: url('/assets/img/VectorV.svg');
+        background-image: url('../img/VectorV.svg');
         position: absolute;
         background-repeat: no-repeat;
         left: 60px;
@@ -4167,7 +4842,7 @@ input {
 
     .main_content_wrapper.about-dr::before {
         content: "";
-        background: url(/assets/img/about/911721bee89de52f3cd0d39637cabdee.png);
+        background: url(../img/about/911721bee89de52f3cd0d39637cabdee.png);
         background-size: cover;
         background-position: center center;
         width: 100%;
@@ -4238,7 +4913,7 @@ input {
     }
 
     .about-description-img {
-        background: url(/assets/img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+        background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
         background-size: cover;
         width: 488px;
         height: 453px;
@@ -4268,7 +4943,7 @@ input {
 
     .mob .about-description-img {
         width: 100%;
-        height: 260px;
+        height: 220px;
         display: block;
     }
 
@@ -4375,7 +5050,7 @@ input {
         position: absolute;
         width: 148%;
         height: 230%;
-        background: url('/assets/img/card-img/logo-back.png');
+        background: url('../img/card-img/logo-back.png');
         background-repeat: no-repeat;
         top: -52%;
         left: 7%;
@@ -4387,7 +5062,7 @@ input {
         position: absolute;
         width: 200%;
         height: 240%;
-        background: url('/assets/img/about/150.svg');
+        background: url('../img/about/150.svg');
         background-repeat: no-repeat;
         top: -71%;
         left: -26%;
@@ -4399,7 +5074,7 @@ input {
         position: absolute;
         width: 202%;
         height: 150%;
-        background: url('/assets/img/about/10.svg');
+        background: url('../img/about/10.svg');
         background-repeat: no-repeat;
         top: -50%;
         left: -34%;
@@ -4411,7 +5086,7 @@ input {
         position: absolute;
         width: 195%;
         height: 160%;
-        background: url('/assets/img/about/map.svg');
+        background: url('../img/about/map.svg');
         background-repeat: no-repeat;
         top: -52%;
         left: -12%;
@@ -4732,7 +5407,7 @@ input {
         z-index: -1;
         width: 274px;
         height: 350px;
-        background-image: url(/assets/img/sverlenie/image_32.jpg);
+        background-image: url(../img/sverlenie/image_32.jpg);
         background-size: cover;
         position: absolute;
         background-repeat: no-repeat;
@@ -4782,7 +5457,7 @@ input {
         z-index: -1;
         width: 265px;
         height: 350px;
-        background-image: url(/assets/img/VectorV.svg);
+        background-image: url(../img/VectorV.svg);
         background-size: cover;
         position: absolute;
         background-repeat: no-repeat;
@@ -4886,7 +5561,7 @@ input {
         z-index: -1;
         width: 55%;
         height: 161%;
-        background-image: url('/assets/img/VectorV.svg');
+        background-image: url('../img/VectorV.svg');
         position: absolute;
         background-repeat: no-repeat;
         right: 8%;
@@ -4900,7 +5575,7 @@ input {
         z-index: -1;
         width: 100%;
         height: 100%;
-        background-image: url('/assets/img/slesar/image 30.png');
+        background-image: url('../img/slesar/image 30.png');
         position: absolute;
         background-repeat: no-repeat;
         left: 21.9%;
@@ -5751,7 +6426,7 @@ input {
     left: 0;
     top: 0;
     height: calc(100% + 40px);
-    border-left: 4px solid red;
+    border-left: 1px solid red;
     content: "";
     left: 24px;
 }
@@ -5777,7 +6452,7 @@ input {
     content: "";
     width: 100%;
     height: 160%;
-    background: url('/assets/img/card-img/logo-back.png');
+    background: url('../img/card-img/logo-back.png');
     position: absolute;
     background-repeat: no-repeat;
     z-index: 1;
