@@ -81,11 +81,13 @@ img {
 }
 
 .grid-title {
+    font-family: Gilroy;
     font-size: 40px;
     color: #fff;
 }
 
 .grid-desc {
+    font-family: Gilroy;
     margin-top: 30px;
     font-size: 25px;
     color: #fff;
@@ -303,13 +305,16 @@ img {
 }
 
 .content_title h2 {
+    font-family: Gilroy;
     font-size: 69px;
     font-weight: 600;
     color: #000;
     line-height: 58px;
+    width: max-content;
 }
 
 .content_title h2 span {
+    font-family: Gilroy;
     font-size: 53px;
     font-weight: 500;
     color: rgba(103, 110, 124, 1);
@@ -340,6 +345,7 @@ img {
 }
 
 .slider_link {
+    font-family: Gilroy;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
@@ -461,7 +467,7 @@ img {
 }
 
 .front-8 {
-    background-image: url(assets/img/card-img/logo-back.png);
+    background-image: url(../img/card-img/logo-back.png);
     padding: 37px 54px 50px 38px;
     background-color: #E62900;
     position: absolute;
@@ -513,6 +519,7 @@ img {
 }
 
 .cart-title-mini {
+    font-family: Gilroy;
     position: absolute;
     bottom: 19%;
     left: 6%;
@@ -543,7 +550,12 @@ img {
     font-size: 30px;
 }
 
+.card-link .card-count{
+    font-family: Gilroy;
+}
+
 .cart-title {
+    font-family: Gilroy;
     position: relative;
     z-index: 2;
     width: 80%;
@@ -598,6 +610,7 @@ img {
 }
 
 .work_card_count {
+    font-family: Gilroy;
     color: rgba(230, 41, 0, 1);
     font-size: 85px;
     padding-bottom: 33px;
@@ -605,6 +618,7 @@ img {
 }
 
 .work_card_title {
+    font-family: Gilroy;
     margin-top: 44px;
     color: #fff;
     font-size: 35px;
@@ -614,6 +628,7 @@ img {
 }
 
 .work_card_desc {
+    font-family: Gilroy;
     margin-top: 24px;
     font-size: 18px;
     line-height: 20.7px;
@@ -672,6 +687,7 @@ img {
 }
 
 .form_desc {
+    font-family: Gilroy;
     margin-top: 31px;
     position: relative;
     z-index: 2;
@@ -726,6 +742,7 @@ input {
 }
 
 .form-confluence {
+    font-family: Gilroy;
     position: relative;
     z-index: 2;
     margin-top: 33px;
@@ -737,6 +754,7 @@ input {
 }
 
 .form-confluence a {
+    font-family: Gilroy;
     color: #fff;
     text-decoration: underline;
 }
@@ -769,6 +787,7 @@ input {
 }
 
 .footer_phone a {
+    font-family: Gilroy;
     color: #fff;
     font-size: 67px;
     font-weight: 600;
@@ -808,6 +827,7 @@ input {
 
 .footer_time_work_1 p,
 .footer_time_work_2 p {
+    font-family: Gilroy;
     margin-top: 30px;
     font-size: 30px;
     color: #fff;
@@ -883,6 +903,7 @@ input {
 }
 
 .link ul li a {
+    font-family: Gilroy;
     color: #fff;
     font-weight: 500;
     font-size: 20px;
@@ -995,6 +1016,7 @@ input {
 }
 
 .advantages_item_title {
+    font-family: Gilroy;
     padding-top: 25px;
     font-size: 40px;
     color: #fff;
@@ -1003,6 +1025,7 @@ input {
 }
 
 .advantages_grid_item p {
+    font-family: Gilroy;
     margin-top: 24px;
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
@@ -1062,6 +1085,7 @@ input {
 }
 
 .job_count {
+    font-family: Gilroy;
     position: relative;
     display: flex;
     justify-content: center;
@@ -1076,6 +1100,7 @@ input {
 }
 
 .job_title {
+    font-family: Gilroy;
     margin-top: 20px;
     position: relative;
     z-index: 3;
@@ -1095,7 +1120,7 @@ input {
 }
 
 .drob_info_grid_item {
-    height: fit-content;
+    height: auto;
     padding: 46px 40px;
     background: rgba(240, 240, 240, 1);
     border-radius: 30px;
@@ -1201,6 +1226,8 @@ input {
 }
 
 .drob_solution_title {
+    font-family: Gilroy;
+    font-weight: 600;
     margin-top: 25px;
     font-size: 40px;
     color: #fff;
@@ -1244,6 +1271,7 @@ input {
 }
 
 .prem .grid-desc h2 {
+    font-family: Gilroy;
     font-size: 45px;
     font-weight: 600;
     line-height: 48.15px;
@@ -1267,6 +1295,7 @@ input {
 }
 
 .drob_number {
+    font-family: Gilroy;
     color: rgba(230, 41, 0, 1);
     font-size: 25px;
 }
@@ -1312,6 +1341,10 @@ input {
     grid-template-columns: 1fr 1fr;
 }
 
+.usefull_wrap .usefull-text{
+    font-family: Gilroy;
+}
+
 .pokraska_grid_new {
     margin-top: 30px;
 }
@@ -1333,6 +1366,7 @@ input {
 }
 
 .usefull_list li {
+    font-family: Gilroy;
     padding-bottom: 30px;
     font-size: 25px;
     padding-left: 70px;
@@ -1398,15 +1432,17 @@ input {
 }
 
 .banner_title {
+    font-family: Gilroy;
     margin-top: 60px;
     margin-bottom: 60px;
     font-size: 69px;
-    max-width: 990px;
+    max-width: 1050px;
     color: #fff;
     font-weight: 600;
 }
 
 .banner_title span {
+    font-family: Gilroy;
     color: #000;
     font-weight: 600;
 }
@@ -1422,11 +1458,13 @@ input {
 }
 
 .banner_btn_wrap a {
+    font-family: Gilroy;
     font-size: 15px;
     color: #fff;
 }
 
 .banner_btn_wrap a span {
+    font-family: Gilroy;
     color: #000;
     text-decoration: underline;
 }
@@ -1480,6 +1518,7 @@ input {
 }
 
 .delivery_count {
+    font-family: Gilroy;
     padding: 14px;
     font-size: 45px;
     color: #fff;
@@ -1500,6 +1539,7 @@ input {
 }
 
 .peherps_count {
+    font-family: Gilroy;
     font-size: 85px;
     color: rgba(230, 41, 0, 1);
 }
@@ -1512,6 +1552,7 @@ input {
 }
 
 .peherps_title {
+    font-family: Gilroy;
     margin-top: 25px;
     color: #000;
 }
@@ -1559,6 +1600,7 @@ input {
 }
 
 .drob_alert {
+    font-family: Gilroy;
     padding: 19px 40px;
     background: rgba(230, 41, 0, 1);
     border-radius: 30px;
@@ -1601,6 +1643,7 @@ input {
 }
 
 .service-info.lb span {
+    font-family: Gilroy;
     font-size: 25px;
     font-weight: 400;
     line-height: 36px;
@@ -1864,6 +1907,28 @@ input {
     margin-left: 15px;
 }
 
+.bg-black .card-item ol{
+    padding-left: 25px;
+}
+
+.bg-black .card-item ol li{
+    position: relative;
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 37px;
+}
+.bg-black .card-item ol li::before{
+    content: '';
+    position: absolute;
+    background: #ffffff;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    top: 19px;
+    left: -20px;
+}
+
 .bg-black .card-item h2 {
     color: var(--red-title);
     font-family: Gilroy;
@@ -2105,7 +2170,7 @@ input {
 }
 
 .about-title-text p {
-    font-family: Roboto Flex;
+    font-family: Gilroy;
     font-size: 16px;
     font-weight: 500;
     line-height: 21px;
@@ -2225,6 +2290,7 @@ input {
 }
 
 .grid-item p {
+    font-family: Gilroy;
     font-size: 25px;
     font-weight: 400;
     line-height: 36px;
@@ -2237,7 +2303,22 @@ input {
     font-weight: 400;
     line-height: 46px;
     text-align: left;
+    padding-left: 20px;
+}
 
+.type-list ul li{
+    font-family: Gilroy;
+    position: relative;
+}
+.type-list ul li::before{
+    content: '';
+    position: absolute;
+    background: #000000;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    top: 23px;
+    left: -20px;
 }
 
 .slider_content {
@@ -2262,9 +2343,19 @@ input {
 }
 
 .checkmark h3 {
+    font-family: Gilroy;
     font-size: 40px;
     font-weight: 600;
     color: #676E7C;
+    line-height: 42px;
+}
+
+.checkmark span {
+    font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 400;
+    color: #060606;
+    line-height: 36px;
 }
 
 
@@ -2295,6 +2386,18 @@ input {
     flex-direction: column;
     gap: 50px;
     position: relative;
+}
+
+.frezer.specific::after{
+    left: inherit;
+    right: 0;
+}
+.frezer.specific::before{
+    right: 15%;
+}
+
+.about-info-frezer .about-title h2{
+    text-transform: none;
 }
 
 .checkmark-block::before {
@@ -2463,6 +2566,13 @@ input {
     border-bottom: 1px solid var(--red-title);
 }
 
+.fq-item p {
+    font-family: Gilroy;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 48.15px;
+}
+
 .tb-bg .table {
     width: 40%;
 }
@@ -2477,6 +2587,7 @@ input {
 }
 
 .description p {
+    font-family: Gilroy;
     font-size: 25px;
     font-weight: 400;
     line-height: 36px;
@@ -2504,14 +2615,20 @@ input {
 }
 
 .work_solution_wrapper .solutin_info_grid .info_grid_count {
+    font-family: Gilroy;
     font-size: 85px;
     font-weight: 400;
     line-height: 84px;
     text-align: left;
 }
 
+.proiz .about-title h2{
+    text-transform: none;
+}
+
 
 .work_solution_wrapper .solutin_info_grid .info_grid_itle {
+    font-family: Gilroy;
     font-size: 45px;
     font-weight: 600;
     line-height: 48px;
@@ -2519,6 +2636,7 @@ input {
 }
 
 .work_solution_wrapper .solutin_info_grid .info_grid_text {
+    font-family: Gilroy;
     font-size: 25px;
     font-weight: 400;
     line-height: 36px;
@@ -2626,6 +2744,7 @@ input {
 }
 
 .card-about-item p {
+    font-family: Gilroy;
     font-size: 23px;
     font-weight: 400;
     line-height: 28px;
@@ -2765,6 +2884,7 @@ input {
 }
 
 .about-description li {
+    font-family: Gilroy;
     font-size: 25px;
     font-weight: 400;
     line-height: 38px;
@@ -4761,6 +4881,28 @@ input {
     .preim-adv .grid{
         gap: 10px;
     }
+    .type-list ul{
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 15px;
+    }
+    .type-list span{
+        font-size: 13px !important;
+        line-height: 13px !important;
+    }
+    .type-list ul li::before{
+        width: 3px;
+        height: 3px;
+        top: 8px;
+        left: -12px;
+    }
+    .type-list .grid-item .icon svg{
+        width: 40px;
+        height: 40px;
+    }
+    .type-list .grid-item .icon {
+        margin-bottom: 30px;
+    }
 }
 
 @media (max-width: 375.9px) {
@@ -6470,4 +6612,321 @@ input {
     background: rgba(230, 41, 0, 1);
     border-radius: 10px;
     margin-top: 25px;
+}
+
+
+
+
+/* -------------------------------------------- */
+.checkmark-block-slesar .checkmark-text{
+    font-family: Gilroy;
+    font-size: 40px;
+    line-height: 42px;
+    font-weight: 600;
+}
+.checkmark-block-slesar .checkmark-text p{
+    font-family: Gilroy;
+    margin-top: 10px;
+}
+.form_wrapper-slesar .form-container{
+    justify-content: center;
+}
+.pokraska-operation h2{
+    font-family: Gilroy;
+    margin-bottom: 60px;
+}
+.pokraska-operation .pokraska_title{
+    font-family: Gilroy;
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+@media (max-width: 1080px){
+    .pokraska-operation h2{
+        font-size: 46px;
+        line-height: 58px;
+        width: max-content;
+    }
+    .pokraska-operation h2 span{
+        font-size: 46px;
+        line-height: 58px;
+        width: max-content;
+    }
+    .pokraska-operation .pokraska_grid_item{
+        padding: 30px;
+    }
+}
+@media (max-width: 991px){
+    .pokraska-operation .pokraska_title {
+        margin-bottom: 20px;
+    }
+    .pokraska-operation .pokraska_grid_desc{
+        font-size: 18px !important;
+        line-height: 26px !important;
+    }
+}
+@media (max-width: 600px){
+    .pokraska-operation h2{
+        font-size: 25px;
+        line-height: 31px;
+        margin-bottom: 20px;
+    }
+    .pokraska-operation h2 span{
+        font-size: 25px;
+        line-height: 31px;
+    }
+    .pokraska-operation .pokraska_title {
+        font-size: 15px !important;
+        line-height: 16px !important;
+        margin-bottom: 10px;
+    }
+    .pokraska-operation .pokraska_grid_desc{
+        font-size: 12px !important;
+        line-height: 16px !important;
+    }
+    .pokraska-operation .pokraska_grid_item{
+        padding: 20px 10px;
+    }
+    .pokraska-operation .pokraska_grid_wrapper{
+        gap: 10px;
+    }
+    .pokraska-operation .pokraska_grid_item{
+        margin-top: 10px;
+    }
+}
+.pokraska-operation .pokraska_grid_desc{
+    font-family: Gilroy;
+    font-size: 25px;
+    line-height: 36px;
+    font-weight: 400;
+    margin: 0;
+}
+.obrabotka-pokraska.obrabotka_wrapper::after{
+    background-size: 35%;
+}
+@media (max-width: 1080px){
+    .delivery_wrapper-dostavka h2{
+        font-size: 46px;
+        line-height: 40px;
+    }
+    .delivery_wrapper-dostavka .delivery_count{
+        font-family: Gilroy;
+        display: block;
+        width: fit-content;
+    }
+    .delivery_wrapper-dostavka .delivery_desc{
+        font-family: Gilroy;
+        line-height: 22px;
+    }
+}
+@media (max-width: 991px){
+    .delivery_wrapper-dostavka .delivery_grid_wrapper.deliv{
+        margin-top: 20px;
+    }
+}
+.drob_info_wrapper-contacts .drob_info_item img{
+    object-fit: cover;
+
+}
+@media (max-width: 767px){
+    .content_title{
+        display: block;
+    }
+    .fq-item p {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 31px;
+    }
+    .fq-block {
+        margin-top: 10px;
+    }
+    .work_solution_wrapper{
+        overflow: hidden;
+    }
+}
+
+.custom-content{
+    padding-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+@media only screen and (max-width: 1500px){
+    .custom-content h2{
+        line-height: 46px;
+        width: max-content;
+    }
+}
+@media (max-width: 1080px){
+    .custom-content{
+        justify-content: flex-start;
+    }
+    .custom-content h2{
+        line-height: 30px;
+    }
+}
+@media (max-width: 767px){
+    .custom-content{
+        padding-right: 0;
+    }
+    .custom-content h2{
+        font-size: 24px !important;
+    }
+    .custom-content h2 br{
+        display: none;
+    }
+    .custom-content h2 span{
+        font-size: 24px !important;
+        line-height: 32px !important;
+    }
+    .header_info_content h2 {
+        padding-right: 20px;
+    }
+    .info_text h1{
+        line-height: 35px;
+    }
+    .footer_map{
+        padding-left: 0;
+        padding-right: 0;
+        height: 260px;
+    }
+    .footer_map div{
+        border-radius: 10px !important;
+    }
+    .info_text h1 {
+        font-size: 25px;
+    }
+    .footer_socials a{
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .checkmark-block-slesar{
+        margin-top: 30px;
+    }
+    .checkmark-block-slesar .checkmark{
+        gap: 10px;
+    }
+    .checkmark-block-slesar .checkmark-text{
+        margin-left: 0;
+        font-size: 18px;
+        line-height: 19px;
+    }
+    .stroy-items.description p{
+        font-size: 9px !important;
+        line-height: 12px !important;
+    }
+    .stroy-items.description br{
+        display: none;
+    }
+    .stroy-items.description .drob_border::before{
+        position: relative;
+        margin: 0;
+        display: block;
+        border: 1px solid red;
+        margin-bottom: 10px;
+    }
+    .stroy-items.description .drob_title{
+        margin: 0 0 6px 0;
+    }
+    .stroy-items.description .drob_info_grid_item1{
+        padding: 15px;
+    }
+    .stroy-price-block span{
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .sverlenie-about-title{
+        padding-left: 30px;
+    }
+    .index-card-container{
+        gap: 10px;
+    }
+    .index-card-container .card-inner{
+        height: 180px;
+    }
+    .index-card-container .cart-title{
+        font-weight: 600;
+    }
+    .frezer-about-info .about-title-text p{
+        display: block;
+        margin-bottom: 20px;
+        color: rgba(16, 18, 20, 1);
+        font-weight: 600;
+    }
+    .frezer-about-info .about-title-text{
+        width: 100%;
+    }
+}
+@media (max-width: 375.9px){
+    .work_wrapper{
+        gap: 30px 10px;
+    }
+}
+.custom-mob-image{
+    display: none;
+}
+.card:hover:not(.no) .card-inner {
+    transform: none !important;
+}
+@media (max-width: 767px){
+    .custom-mob-image{
+        display: block;
+    }
+    .frezer .custom-mob-image{
+        position: absolute;
+        bottom: -50px;
+        right: -15px;
+    }
+    .frezer.specific::after{
+        display: none;
+    }
+}
+.table-row-flex .table-cell{
+    min-width: 130px;
+}
+.table-row-flex .table-cell p{
+    width: 100%;
+}
+.table-inner-image{
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 117px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+@media (max-width: 1500px){
+    .table-inner{
+        display: flex;
+    }
+    .table-inner > div:first-child{
+        width: 40%;
+    }
+}
+@media (max-width: 1080px){
+    .table-inner > div:first-child {
+        padding: 0;
+    }
+    .table-inner-image{
+        padding-bottom: 2%;
+    }
+    .table-inner .table-row-flex .table-row{
+        padding: 0;
+    }
+}
+@media (max-width: 767px){
+    .table-row-flex .table-cell{
+        min-width: inherit;
+    }
+    .table-inner-image{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .table-cell{
+        padding: 4px 10px;
+    }
 }

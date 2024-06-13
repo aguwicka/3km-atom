@@ -395,7 +395,7 @@ body .checkmark::after {
   left: 0;
   top: 0;
   height: calc(100% + 30px);
-  border-left: 4px solid red;
+  border-left: 2px solid red;
   content: "";
   left: 24px;
 
@@ -418,7 +418,7 @@ body .variety-box .checkmark:last-child::after {
 }
 
 .tehnology {
-  background-image: url("/assets/img/stroy/2ebdefe6d041769772e822eb88b220d5.jpg");
+  background-image: url("../img/stroy/2ebdefe6d041769772e822eb88b220d5.jpg");
   padding-top: 120px;
   padding-bottom: 80px;
   background-size: cover;
@@ -443,6 +443,7 @@ body .variety-box .checkmark:last-child::after {
   color: #fff;
 }
 .tehnology .about-info p {
+  font-family: Gilroy;
   color: #fff;
 }
 .tehnology .about-info  .about-title-block{
@@ -452,10 +453,14 @@ body .variety-box .checkmark:last-child::after {
   margin-top: 20px;
 }
 .price-block {
+  font-family: Gilroy;
   background-color: #F5F8FA;
   border-radius: 20px;
   padding: 30px;
   margin-top: 40px;
+}
+.price-block span{
+  font-family: Gilroy;
 }
 .price-block .checkmark-block {
   margin-top: 30px;
@@ -484,7 +489,7 @@ body .bg-black .card-item {
   z-index: -1;
   width: 265px;
   height: 350px;
-  background-image: url(/assets/img/VectorV.svg);
+  background-image: url(../img/VectorV.svg);
   background-size: cover;
   position: absolute;
   background-repeat: no-repeat;
@@ -497,7 +502,7 @@ body .bg-black .card-item {
   z-index: -2;
   width: 500px;
   height: 500px;
-  background-image: url(/assets/img/frezer/d26ab7b06facf3bd4f1357e6bbdfbb75.png);
+  background-image: url(../img/frezer/d26ab7b06facf3bd4f1357e6bbdfbb75.png);
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
@@ -565,7 +570,7 @@ body .bg-black .card-item {
   z-index: -1;
   width: 265px;
   height: 350px;
-  background-image: url(/assets/img/VectorV.svg);
+  background-image: url(../img/VectorV.svg);
   background-size: cover;
   position: absolute;
   background-repeat: no-repeat;
@@ -578,7 +583,7 @@ body .bg-black .card-item {
   z-index: -2;
   width: 500px;
   height: 500px;
-  background-image: url(/assets/img/proizvodstvo/6dd35a70f92066a49eb0269d8cc763fb.png);
+  background-image: url(../img/proizvodstvo/6dd35a70f92066a49eb0269d8cc763fb.png);
   position: absolute;
   background-size: cover;
   background-repeat: no-repeat;
@@ -594,7 +599,7 @@ body .bg-black .card-item {
   position: absolute;
   right: 0;
   bottom: 0;
-  background-image: url(/assets/img/usefull-img.png);
+  background-image: url(../img/usefull-img.png);
   background-position: right bottom;
   background-repeat: no-repeat;
   content: "";
@@ -623,7 +628,7 @@ body .obrabotka_wrapper  .jobs_inf  {
 }
 .pokraska_grid_item:nth-child(2):after {
   content: "";
-  background-image: url(/assets/img/pokraska/Group_11736.png);
+  background-image: url(../img/pokraska/Group_11736.png);
   width: 70%;
   height: 70%;
   position: absolute;
