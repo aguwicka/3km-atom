@@ -418,7 +418,7 @@ body .variety-box .checkmark:last-child::after {
 }
 
 .tehnology {
-  background-image: url("../img/stroy/2ebdefe6d041769772e822eb88b220d5.jpg");
+  /* background-image: url("../img/stroy/2ebdefe6d041769772e822eb88b220d5.jpg"); */
   padding-top: 120px;
   padding-bottom: 80px;
   background-size: cover;

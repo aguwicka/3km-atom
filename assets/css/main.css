@@ -438,7 +438,7 @@ img {
     background-repeat: no-repeat;
 }
 
-.front-1 {
+/* .front-1 {
     background-image: url(../img/card-img/c1.jpg);
 }
 
@@ -464,10 +464,10 @@ img {
 
 .front-7 {
     background-image: url(../img/card-img/c7.jpg);
-}
+} */
 
 .front-8 {
-    background-image: url(../img/card-img/logo-back.png);
+    /* background-image: url(../img/card-img/logo-back.png); */
     padding: 37px 54px 50px 38px;
     background-color: #E62900;
     position: absolute;
@@ -642,15 +642,30 @@ img {
     justify-content: center;
     align-items: center;
     position: relative;
-    background: url(../img/form_img.jpg) no-repeat center center fixed;
+    /* background: url(../img/form_img.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
+}
+
+.form_wrapper__image{
+    background-repeat: no-repeat;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .form_wrapper.two_bg {
-    background: url(../img/slesar/form_bg.jpg) no-repeat fixed;
+    /* background: url(../img/slesar/form_bg.jpg) no-repeat fixed; */
     background-size: cover;
 }
 
@@ -983,11 +998,14 @@ input {
 .advantages_wrapper {
     padding: 90px 60px;
     position: relative;
-    background: url(../img/advantages_img.jpg) no-repeat center center fixed;
+    /* background: url(../img/advantages_img.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .advantages_wrapper::after {
@@ -1190,11 +1208,14 @@ input {
 
 .drob_solutin_wrapper {
     position: relative;
-    background: url(../img/drob-bck.jpg) no-repeat center center fixed;
+    /* background: url(../img/drob-bck.jpg) no-repeat center center fixed; */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 
@@ -1470,7 +1491,7 @@ input {
 }
 
 .delivery_banner {
-    background: url(../img/delivery.jpg) no-repeat center center fixed;
+    /* background: url(../img/delivery.jpg) no-repeat center center fixed; */
 }
 
 .drob-banner {
@@ -2774,49 +2795,109 @@ input {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('../img/card-img/logo-back.png');
+    /* background: url('../img/card-img/logo-back.png');
+    background-repeat: no-repeat; */
+    top: 45%;
+    left: 19%;
+    transform: scale(0.7);
+}
+
+.card-about-right__image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     top: 45%;
     left: 19%;
     transform: scale(0.7);
 }
 
-.card-about-item.one::before {
+@media (max-width: 1200px){
+    .card-about-right__image{
+        width: 148%;
+        height: 230%;
+        transform: scale(0.4);
+        top: -52%;
+        left: 7%;
+    
+    }
+}
+
+.card-about-item.one::before, .card-about-item.one img {
     content: "";
     position: absolute;
-    width: 100%;
+    width: auto;
     height: 100%;
-    background: url('../img/about/150.svg');
-    background-repeat: no-repeat;
+    /* background: url('../img/about/150.svg');
+    background-repeat: no-repeat; */
     top: 0%;
-    left: 40%;
+    left: 45%;
     transform: scale(0.8);
 }
 
-.card-about-item.two::before {
+@media (max-width: 767px){
+    .card-about-item.one img{
+        left: 33%;
+        transform: scale(0.7);
+    }
+}
+@media (max-width: 375.9px){
+    .card-about-item.one img{
+        transform: scale(0.6);
+    }
+}
+
+.card-about-item.two::before, .card-about-item.two img {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 70%;
     height: 100%;
-    background: url('../img/about/10.svg');
-    background-repeat: no-repeat;
-    top: -5%;
-    left: 40%;
+    /* background: url('../img/about/10.svg');
+    background-repeat: no-repeat; */
+    top: -75px;
+    left: 35%;
     transform: scale(0.8);
 }
 
-.card-about-item.three::before {
+@media (max-width: 1200px){
+    .card-about-item.two img{
+        top: -20px;
+    }
+}
+
+@media (max-width: 767px){
+    .card-about-item.two img{
+        height: 80%;
+    }
+}
+
+.card-about-item.three::before, .card-about-item.three img {
     content: "";
     position: absolute;
-    width: 100%;
+    width: 40%;
     height: 100%;
-    background: url('../img/about/map.svg');
-    background-repeat: no-repeat;
-    top: -5%;
+    /* background: url('../img/about/map.svg');
+    background-repeat: no-repeat; */
+    top: -75px;
     left: 55%;
     transform: scale(0.8);
 }
 
+@media (max-width: 1200px){
+    .card-about-item.three img{
+        top: -25px;
+    }
+}
+
+@media (max-width: 767px){
+    .card-about-item.three img{
+        height: 80%;
+    }
+}
+
+.card-about-item.one::before, .card-about-item.two::before, .card-about-item.three::before{
+    display: none;
+}
 
 .about-info .about-title h2 {
     font-family: Gilroy;
@@ -2874,7 +2955,7 @@ input {
 }
 
 .about-description-img {
-    background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+    /* background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png); */
     background-size: cover;
     width: 732px;
     height: 680px;
@@ -3019,6 +3100,10 @@ input {
     z-index: -1;
 }
 
+.main_content_wrapper.about-dr_image{
+    display: none;
+}
+
 /** MOBILE **/
 @media only screen and (max-width: 1500px) {
 
@@ -3026,7 +3111,7 @@ input {
         content: "";
         width: 100%;
         height: 100%;
-        background: url(../img/card-img/logo-back.png);
+        /* background: url(../img/card-img/logo-back.png); */
         position: absolute;
         background-repeat: no-repeat;
         z-index: 1;
@@ -3089,7 +3174,7 @@ input {
     }
 
     .about-description-img {
-        background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+        /* background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png); */
         background-size: cover;
         width: 488px;
         height: 453px;
@@ -4984,7 +5069,7 @@ input {
 
     .main_content_wrapper.about-dr::before {
         content: "";
-        background: url(../img/about/911721bee89de52f3cd0d39637cabdee.png);
+        /* background: url(../img/about/911721bee89de52f3cd0d39637cabdee.png); */
         background-size: cover;
         background-position: center center;
         width: 100%;
@@ -4995,6 +5080,21 @@ input {
         z-index: -1;
         filter: opacity(0.5);
     }
+
+    .main_content_wrapper .about-dr__image{
+        display: block;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: opacity(0.5);
+    }
+
+
 
     .about-description ul {
         padding: 0;
@@ -5055,7 +5155,7 @@ input {
     }
 
     .about-description-img {
-        background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png);
+        /* background: url(../img/proizvodstvo/b1d11d61bb1fdb70d65d0e135a2b4ec5.png); */
         background-size: cover;
         width: 488px;
         height: 453px;
@@ -6594,7 +6694,7 @@ input {
     content: "";
     width: 100%;
     height: 160%;
-    background: url('../img/card-img/logo-back.png');
+    /* background: url('../img/card-img/logo-back.png'); */
     position: absolute;
     background-repeat: no-repeat;
     z-index: 1;
@@ -6928,5 +7028,8 @@ input {
     }
     .table-cell{
         padding: 4px 10px;
+    }
+    .drob_info_item img{
+        object-fit: cover !important;
     }
 }
