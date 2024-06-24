@@ -34,19 +34,23 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 2,
-        margin: 40,
+        margin: 20,
       },
       420: {
         items: 2,
-        margin: 40,
+        margin: 20,
       },
       720: {
         items: 2,
-        margin: 40,
+        margin: 20,
       },
       1024: {
         items: 3,
-        margin: 40,
+        margin: 50,
+      },
+      1500: {
+        items: 3,
+        margin: 100,
       },
 
     }

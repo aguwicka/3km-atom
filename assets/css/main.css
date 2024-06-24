@@ -15,6 +15,13 @@
 
 @font-face {
     font-family: 'Gilroy';
+    src: url('../font/gillroy/GILROY-MEDIUM.TTF') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
     src: url('../font/gillroy/Gilroy-SemiBold.otf') format('opentype');
     font-weight: 600;
     font-style: normal;
@@ -101,8 +108,8 @@ img {
 .main_slider.owl-carousel .owl-nav button.owl-next {
     z-index: 1;
     position: absolute;
-    top: 50%;
-    transform: translate(-50%, 0);
+    top: calc(50% - 30px);
+    /* transform: translate(-50%, 0); */
 }
 
 .main_slider.owl-carousel .owl-nav button.owl-prev {
@@ -112,6 +119,7 @@ img {
 .main_slider.owl-carousel .owl-nav button.owl-next {
     right: -40px;
     transform: rotate(180deg);
+    top: calc(50% - 35px);
 }
 
 .cards-owl {
@@ -183,6 +191,11 @@ img {
     border-radius: 10px;
 }
 
+.info_buttons .header_form_button, .info_buttons .header_number{
+    padding: 40px 48px;
+    border-radius: 20px;
+}
+
 .header_form_button {
     padding: 18px 40.5px;
     border: 0;
@@ -191,6 +204,7 @@ img {
     color: #fff;
     background: rgba(230, 41, 0, 1);
     border-radius: 10px;
+    text-align: center;
 }
 
 .header_menus_mob nav {
@@ -272,6 +286,7 @@ img {
 .info_buttons {
     display: flex;
     flex-direction: column;
+    width: 275px;
 }
 
 .info_buttons .header_number {
@@ -330,7 +345,7 @@ img {
 }
 
 .main_slider {
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 .slider_img {
@@ -341,7 +356,8 @@ img {
 
 .slider_img img {
     border-radius: 30px;
-    object-fit: contain;
+    object-fit: cover;
+    height: 500px;
 }
 
 .slider_link {
@@ -415,7 +431,7 @@ img {
     justify-content: space-between;
     font-size: 1.5em;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .card-front::before {
@@ -427,7 +443,7 @@ img {
     height: 100%;
     background-color: rgba(21, 21, 21, 0.5);
     z-index: 1;
-    border-radius: 10px;
+    border-radius: 30px;
 
 }
 
@@ -481,7 +497,7 @@ img {
     justify-content: space-between;
     font-size: 1.5em;
     color: white;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .front-mini {
@@ -499,6 +515,7 @@ img {
 
 .front-mini .card-top-wrapper img.bg {
     filter: brightness(0.6);
+    height: 290px;
 }
 
 .delivery-map-mobile{
@@ -558,16 +575,16 @@ img {
     font-family: Gilroy;
     position: relative;
     z-index: 2;
-    width: 80%;
     line-height: 40px;
+    font-size: 35px;
+    font-weight: 500;
 }
 
 .cart-sub {
     position: relative;
     z-index: 2;
     font-size: 22px;
-    width: 80%;
-    line-height: 28px;
+    line-height: 25px;
 }
 
 .logo-back {
@@ -623,7 +640,7 @@ img {
     color: #fff;
     font-size: 35px;
     line-height: 37.45px;
-    font-weight: 600;
+    font-weight: 500;
     width: 80%;
 }
 
@@ -632,7 +649,7 @@ img {
     margin-top: 24px;
     font-size: 18px;
     line-height: 20.7px;
-    color: rgba(171, 171, 171, 1);
+    color: #ffffff;
 }
 
 .form_wrapper {
@@ -716,6 +733,7 @@ img {
 .form-container {
     margin-top: 70px;
     display: flex;
+    justify-content: center;
     position: relative;
     z-index: 2;
     flex-direction: row;
@@ -742,18 +760,21 @@ input {
 
 
 .form-name {
-    padding: 34px 90px 34px 40px;
-    width: 14%;
+    padding: 34px 40px 34px 40px;
+    width: 255px;
 }
 
 .form-phone {
-    padding: 34px 90px;
+    padding: 34px 80px 34px 90px;
+    width: 165px;
 }
 
 .form-submit {
     padding: 34px 124px;
     background: rgba(230, 41, 0, 1);
     color: #fff;
+    margin-right: 0;
+    width: 335px;
 }
 
 .form-confluence {
@@ -954,8 +975,9 @@ input {
 .solution_text_grid {
     margin-top: 40px;
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
-    gap: 32px;
+    /* grid-template-columns: 1fr 1.1fr; */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
 }
 
 .solutin_info_grid {
@@ -3105,6 +3127,12 @@ input {
 }
 
 /** MOBILE **/
+@media only screen and (max-width: 1700px){
+    .slider_img img {
+        height: 400px;
+    }
+}
+
 @media only screen and (max-width: 1500px) {
 
     .banner_services_wrapper::before {
@@ -3866,7 +3894,7 @@ input {
 
 
     .header_menus ul li {
-        margin-right: 10px;
+        /* margin-right: 10px; */
     }
 
     .header_buttons {
@@ -3973,17 +4001,17 @@ input {
     }
 
     .card-front,
-    .card-back {
-        padding: 15px 10px 20px 10px;
+    .card-back, .front-8{
+        padding: 25px 36px 32px 25px;
     }
 
     .slider_link {
-        font-size: 12px;
+        font-size: 23px;
     }
 
     .slider_link img {
-        width: 12px !important;
-        height: 12px !important;
+        width: 32px !important;
+        height: 32px !important;
     }
 
     .card-container {
@@ -4012,7 +4040,6 @@ input {
     .cart-sub {
         font-size: 14px;
         line-height: 17px;
-        width: 65%;
     }
 
     .cart-title-mini {
@@ -4423,6 +4450,35 @@ input {
     }
 }
 
+@media only screen and (max-width: 1300px){
+    .header_menus ul li {
+        margin-right: 30px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .slider_img img {
+        height: 300px;
+    }
+    .slider_img {
+        margin-top: 20px;
+    }
+    .slider_link {
+        font-size: 19px;
+        padding-bottom: 15px;
+    }
+    .slider_link img {
+        width: 22px !important;
+        height: 22px !important;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .header_menus ul li {
+        margin-right: 10px;
+    }
+}
+
 @media only screen and (max-width: 1080px) {
 
     .fot-owl.owl-carousel .owl-nav button.owl-next {
@@ -4530,7 +4586,7 @@ input {
     }
 
     .card-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
     }
 
     .work_wrapper {
@@ -4619,6 +4675,38 @@ input {
         width: 70%;
     }
 
+}
+
+@media only screen and (max-width: 991px){
+    .slider_link {
+        width: 100%;
+    } 
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .slider_img img {
+        height: 180px;
+        border-radius: 20px;
+    }
+    .slider_img {
+        margin-bottom: 12px;
+        margin-top: 5px;
+    }
+    .slider_link {
+        font-size: 12px;
+        padding-bottom: 15px;
+        gap: 10px;
+    }
+    .slider_link img {
+        width: 12px !important;
+        height: 12px !important;
+    }
+    .main_slider.owl-carousel .owl-nav button.owl-prev, .main_slider.owl-carousel .owl-nav button.owl-next{
+        top: calc(50% - 25px);
+    }
 }
 
 @media (max-width: 600px) {
@@ -6237,15 +6325,16 @@ input {
 
     .card-container {
         margin-top: 20px;
+        gap: 20px;
     }
 
     .card-inner {
         position: relative;
-        height: 250px;
+        height: 300px;
     }
 
     .card-count {
-        font-size: 15px;
+        /* font-size: 15px; */
     }
 
     .card-link img {
@@ -6255,21 +6344,23 @@ input {
     }
 
     .cart-title {
-        font-size: 11px;
-        width: 100%;
-        line-height: 13px;
+        font-size: 16px;
+        line-height: 20px;
     }
 
     .cart-sub {
-        font-size: 9px;
-        width: 100%;
-        line-height: 11px;
+        font-size: 11px;
+        line-height: 13px;
     }
 
     .card-front,
     .card-back,
     .front-8 {
-        padding: 15px 10px 20px 10px;
+        padding: 20px 30px 20px 20px;
+        border-radius: 20px;
+    }
+    .card-front::before{
+        border-radius: 20px;
     }
 
     .logo-back {
@@ -7032,4 +7123,41 @@ input {
     .drob_info_item img{
         object-fit: cover !important;
     }
+}
+
+.metall-about-info .about-title-text p,
+.frezer-about-info-dop .about-title-text p{
+    font-family: "Roboto Flex";
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.metall-about-info .about-title-text,
+.frezer-about-info-dop .about-title-text{
+    width: 60%;
+}
+
+.drob-info-grid{
+    display: flex;
+    gap: 30px;
+}
+.drob-image{
+    width: calc(50% - 15px);
+    border-radius: 30px;
+    background-position: center;
+    background-size: cover;
+}
+.drob-image img{
+    height: 100% !important;
+    object-fit: cover;
+}
+.drob-description{
+    min-height: 383px;
+    width: calc(50% - 95px);
+}
+.drob-description p{
+    font-size: 25px;
+}
+.about-dr .drob_info_item img{
+    object-fit: cover;
 }

@@ -1,0 +1,251 @@
+@media only screen and (max-width: 1700px){
+    
+}
+@media only screen and (max-width: 1500px){
+    .drob-info-grid {
+        align-items: inherit;
+    }
+    .drob-description {
+        width: calc(50% - 65px);
+    }
+    .drob-description .drob_title {
+        font-size: 32px;
+        margin-top: 20px;
+    }
+    .drob-description p {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+@media only screen and (max-width: 1300px){
+
+}
+@media only screen and (max-width: 1200px){
+    .info_buttons .header_form_button, .info_buttons .header_number{
+        padding: 18px 21px 18px 21px;
+        border-radius: 10px;
+    }
+    .info_buttons {
+        width: 220px;
+    }
+}
+@media only screen and (max-width: 1150px){
+
+}
+@media only screen and (max-width: 1080px){
+    .drob-info-grid {
+        flex-wrap: wrap;
+    }
+    .drob-description, .drob-image {
+        width: 100%;
+        min-height: inherit;
+    }
+    .drob-image img, .drob-image{
+        height: 360px !important;
+    }
+    .frezer-about-info-dop .about-title-text p{
+        display: block;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+}
+@media only screen and (max-width: 991px){
+    .frezer-about-info-dop .about-title-text p {
+        margin-bottom: 20px;
+    }
+}
+@media only screen and (max-width: 767px){
+    .card-front, .card-back, .front-8 {
+        padding: 15px 10px 20px 10px;
+        border-radius: 10px;
+    }
+    .card-front::before {
+        border-radius: 10px;
+    }
+    .card-count {
+        font-size: 15px;
+    }
+    .cart-title {
+        font-size: 11px;
+        line-height: 12px;
+        font-weight: 500 !important;
+    }
+    .card-link{
+        margin-bottom: 5px;
+    }
+    .cart-sub {
+        font-size: 9px;
+        line-height: 11px;
+    }
+    .work_card_title br{
+        display: none;
+    }
+    .work_wrapper {
+        gap: 40px 17px;
+    }
+    .front-mini, .front-mini .card-top-wrapper > img {
+        border-radius: 20px;
+    }
+    .front-mini .card-link {
+        left: 7%;
+        top: 8%;
+    }
+    .cart-title-mini {
+        bottom: 15%;
+    }
+    .card-mini_form_button{
+        border-radius: 10px;
+    }
+    .card-mini_form_button{
+        font-size: 16px;
+    }
+    .work_item.large h2 {
+        font-size: 25px;
+        line-height: 24px;
+        margin-top: 0;
+    }
+    .index h2, .index .header_into_text{
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+    .info_text h1 {
+        font-size: 28px;
+    }
+    .header_form_button {
+        padding: 23px 20px;
+        font-size: 16px;
+    }
+    .header_number {
+        padding: 21px 17px;
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .index .header_into_text{
+        bottom: 80px;
+    }
+    .slider_content {
+        margin-top: 20px;
+    }
+    .front-mini, .front-mini .card-top-wrapper > img {
+        height: 230px;
+        object-fit: cover;
+    }
+    .card-mini_form_button {
+        margin-top: 20px;
+    }
+    .form_desc {
+        margin-top: 12px;
+    }
+    .form-container {
+        margin-top: 17px;
+    }
+    .form-confluence{
+        font-size: 13px;
+        margin-top: 8px;
+    }
+    .footer_mail a {
+        line-height: 20px;
+    }
+    .footer_address_1 svg, .footer_address_2 svg {
+        margin-right: 13px;
+        min-width: 15px;
+    }
+    .footer_mail{
+        margin-top: 20px;
+    }
+    .footer_mail svg {
+        margin-right: 13px;
+        width: 15px;
+        min-width: 15px;
+    }
+    .footer_address_1, .footer_address_2 {
+        font-size: 12px;
+    }
+    .footer_address_1{
+        margin-top: 10px;
+    }
+    .footer_time_work_1 p, .footer_time_work_2 p {
+        margin-top: 15px;
+    }
+    .footer_time_work_1 .work_time, .footer_time_work_2 .work_time{
+        margin-top: 8px;
+    }
+    .footer_socials{
+        margin-top: 5px;
+    }
+    .footer_link_wrap {
+        margin-top: 5px;
+    }
+    .footer_confluence a {
+        font-size: 13px;
+        font-weight: 500;
+    }
+    .footer_confluence {
+        padding: 12px 16px 12px 16px;
+    }
+    .footer .link ul li a{
+        font-size: 15px;
+        line-height: 17px;
+    }
+    .footer_logo {
+        margin-top: auto;
+    }
+    .info_buttons{
+        width: 100%;
+    }
+    .drob-image img, .drob-image{
+        height: 220px !important;
+        border-radius: 20px;
+    }
+    .drob-info-grid{
+        gap: 0;
+    }
+    .drob-description .drob_title {
+        margin-top: 5px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .drob-description p {
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    .sverlenie .drob-description{
+        padding: 10px 10px 15px 10px;
+        background: none;
+    }
+    .sverlenie .drob-image{
+        display: none;
+    }
+    .sverlenie{
+        position: relative;
+    }
+    .sverlenie::before{
+        content: "";
+        z-index: -1;
+        width: 280px;
+        height: 350px;
+        background-image: url(../img/sverlenie/image_32.jpg);
+        background-size: cover;
+        position: absolute;
+        background-repeat: no-repeat;
+        right: -2.1%;
+        top: 16.6%;
+        transform: scale(1.45);
+        filter: opacity(0.5);
+    }
+    .frezer-about-info-dop .about-title-text p {
+        font-size: 16px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 375.9px){
+    .work_wrapper {
+        gap: 30px 5px;
+    }
+    .sverlenie::before{
+        width: 300px;
+        transform: scale(1.55);
+        top: 14.6%;
+    }
+}
