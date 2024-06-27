@@ -963,14 +963,15 @@ input {
 
 
 .work_solution_wrapper {
+    position: relative;
     padding: 95px 60px;
     overflow: hidden;
 }
 
-.work_solution_wrapper .content_title h2 {
+/* .work_solution_wrapper .content_title h2 {
     font-size: 46px;
     line-height: 45px;
-}
+} */
 
 .solution_text_grid {
     margin-top: 40px;
@@ -1085,6 +1086,7 @@ input {
     text-align: right;
     font-weight: 500;
     font-size: 26px;
+    line-height: 35px;
 }
 
 .jobs_type_grid {
@@ -1386,6 +1388,9 @@ input {
 
 .usefull_wrap .usefull-text{
     font-family: Gilroy;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36px;
 }
 
 .pokraska_grid_new {
@@ -1393,7 +1398,8 @@ input {
 }
 
 .usefull_list ul {
-    margin-top: 20px;
+    margin-top: 45px;
+    margin-bottom: 0;
     padding-left: 0;
     position: relative;
 }
@@ -1410,7 +1416,7 @@ input {
 
 .usefull_list li {
     font-family: Gilroy;
-    padding-bottom: 30px;
+    padding-bottom: 43px;
     font-size: 25px;
     padding-left: 70px;
     position: relative;
@@ -3009,6 +3015,12 @@ input {
 
 .box-owl-fot .fot-owl .item {
     height: 650px;
+    width: 100%;
+}
+
+.box-owl-fot .fot-owl .item img{
+    height: 100%;
+    object-fit: cover;
 }
 
 .fot-owl.owl-carousel .owl-nav button.owl-prev,
@@ -3016,6 +3028,10 @@ input {
     z-index: 1;
     position: absolute;
 
+}
+
+.fot-owl.owl-carousel .owl-nav button.owl-next .custom-prev{
+    margin-top: 4px;
 }
 
 .fot-owl.owl-carousel .owl-nav button.owl-prev {
@@ -3852,28 +3868,28 @@ input {
         grid-template-columns: 1fr;
     }
 
-    .usefull_list li {
+    /* .usefull_list li {
         padding-left: 25px;
     }
 
     .usefull_list ul::before {
         left: 9px;
-    }
+    } */
 
-    .usefull_list li,
+    /* .usefull_list li,
     .usefull-text {
         font-size: 15px;
-    }
+    } */
 
-    .usefull_list li::before {
+    /* .usefull_list li::before {
         width: 20px;
         height: 20px;
         background-image: url(../img/ul-mob.png);
-    }
+    } */
 
-    .usefull_image {
+    /* .usefull_image {
         display: none;
-    }
+    } */
 
     .header_logo,
     .header_info {
@@ -3888,7 +3904,7 @@ input {
     .work_solution_wrapper,
     .advantages_wrapper,
     .main_content_wrapper {
-        padding: 40px 20px;
+        padding: 60px 20px;
     }
 
 
@@ -7160,4 +7176,241 @@ input {
 }
 .about-dr .drob_info_item img{
     object-fit: cover;
+}
+.content_title .h2_title{
+    line-height: 68px;
+    text-transform: uppercase;
+}
+.content_title .h2_title span{
+    font-size: 69px;
+    display: block;
+    text-transform: none;
+}
+.content_title .h2_title br{
+    display: none;
+}
+.grid-title_custom{
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 500;
+}
+.grid-title_custom span{
+    font-family: Gilroy;
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 500;
+}
+.grid-desc_custom{
+    line-height: 36px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+.grid-desc_custom p{
+    font-family: Gilroy;
+    font-size: 25px;
+    color: #fff;
+    line-height: 36px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+.company_advantages_item_custom{
+    padding: 45px 30px 50px 30px;
+}
+.content_title_full{
+    display: block;
+}
+.pokraska_grid_item{
+    padding: 30px 30px 45px 30px;
+}
+.pokraska_grid_new{
+    padding: 55px 30px;
+}
+.usefull_image_mob{
+    display: none;
+}
+.proizvodstvo-tile{
+    padding-top: 160px;
+    padding-bottom: 95px;
+    padding-left: 120px;
+    padding-right: 120px;
+    width: 100%;
+    margin: 0;
+    width: inherit;
+}
+.proizvodstvo-tile .drob_title{
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+.proizvodstvo-tile p{
+    line-height: 36px;
+    margin-top: 15px;
+}
+.proizvodstvo-tile .drob_info_grid_item1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 55px 60px 55px !important;
+}
+.proizvodstvo-tile .drob_info_item_image{
+    min-height: 500px;
+}
+.h2_title .gray-span{
+    color: #676E7C;
+}
+.about-info.proiz .h2_title{
+    line-height: 83px;
+    position: relative;
+    z-index: 1;
+}
+.proiz{
+    position: relative;
+    margin-top: 0;
+}
+.proiz .usefull_list li{
+    font-size: 23px;
+    padding-bottom: 33px;
+    padding-top: 2px;
+}
+.proiz_bg{
+    position: absolute;
+    top: 0;
+    right: -300px;
+    width: 895px;
+    height: 895px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.proiz_vector{
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    width: 616px;
+    height: 810px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.our-perpheps-page .line_banner{
+    background-position: top;
+}
+.our-perpheps-page .peherps_title{
+    font-weight: 500;
+    line-height: 42px;
+}
+.our-perpheps-page .peherps_desc {
+    margin-top: 25px;
+    line-height: 36px;
+}
+.our-perpheps-page .peherps_desc p{
+    font-family: Gilroy;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    margin-top: 15px;
+}
+.our-perpheps-page .peherps_grid_wrapper{
+    gap: 35px;
+}
+.our-perpheps-page .preim .content-block{
+    border-radius: 20px;
+    padding: 30px;
+}
+.our-perpheps-page .preim .block-title{
+    margin-bottom: 30px;
+}
+.delivery-page .grid-desc{
+    line-height: 32px;
+}
+.delivery-page .delivery_count{
+    line-height: 32px;
+    width: 72px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+.delivery-page .content_title h2{
+    line-height: 87px;
+}
+.delivery-page .content_title h2 span{
+    font-size: 69px;
+}
+.delivery-page .content_title h2 span br{
+    display: none;
+}
+.about-page .about-title-text p{
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35px;
+}
+.about-info .about-title h2{
+    line-height: 1;
+}
+.about-page .about-info .about-title h2 span{
+    font-size: 53px;
+    font-weight: 600;
+    line-height: 58px;
+}
+.about-page .about-info .about-title-text{
+    width: inherit;
+    padding-top: 25px;
+}
+.about-page .abb .about-text p{
+    font-size: 26px;
+    line-height: 35px;
+    margin-bottom: 45px;
+}
+.about-page .box-about, .about-page .card-about-left{
+    gap: 30px;
+}
+.about-page .card-about-item.two, .about-page .card-about-item.three{
+    width: calc(50% - 75px);
+    padding: 158px 30px 35px 30px;
+}
+.about-page .card-about-item.one{
+    padding: 72px 30px 35px 30px;
+}
+.about-page .card-about-item p{
+    margin-top: 20px;
+}
+.about-page .card-about-item.one img{
+    left: inherit;
+    right: -50px;
+    width: 70%;
+}
+.about-page .card-about-right{
+    height: auto;
+    padding: 70px 30px;
+    width: 45%;
+}
+.about-page .card-about-right h2{
+    margin-top: 0;
+}
+.about-page .about-info-dop .about-title-text{
+    padding-top: 0;
+}
+.about-page .about-info-dop .about-title h2 span {
+    font-size: 69px;
+    line-height: 83px;
+}
+.about-page .about-info-dop {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 60px;
+}
+.about-page .about-bbx {
+    gap: 40px;
+    padding: 0 60px;
+    width: calc(100% - 120px);
+}
+.about-page .about-description{
+    width: 100%;
+}
+.about-page .about-description ul{
+    padding-left: 0;
+}
+.about-page .about-description-img{
+    min-width: 732px;
 }
