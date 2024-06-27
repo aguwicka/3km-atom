@@ -282,6 +282,13 @@
     .about-page .about-description ul {
         margin-top: 0;
     }
+    .main_slider .item{
+        gap: 70px;
+    }
+    .main_slider.owl-carousel .owl-nav button.owl-next svg, .main_slider.owl-carousel .owl-nav button.owl-prev svg {
+        width: 84px;
+        height: 85px;
+    }
 }
 @media only screen and (max-width: 1350px){
     .usefull_image img {
@@ -300,6 +307,15 @@
     }
     .our-perpheps-page .content-block .grid-logo{
         width: 80%;
+    }
+    .main_slider .item .item-inner:first-child .slider_img {
+        height: 350px;
+    }
+    .main_slider .item .item-inner:nth-child(2) .slider_img {
+        height: 255px;
+    }
+    .main_slider .item .item-inner:last-child .slider_img {
+        height: 350px;
     }
 }
 @media only screen and (max-width: 1300px){
@@ -552,6 +568,16 @@
         padding: 0 20px;
         width: calc(100% - 40px);
     }
+    .main_slider .item{
+        gap: 60px;
+    }
+    .main_slider.owl-carousel .owl-nav button.owl-next svg, .main_slider.owl-carousel .owl-nav button.owl-prev svg {
+        width: 54px;
+        height: 85px;
+    }
+    .main_slider {
+        margin-top: 0px;
+    }
 }
 @media only screen and (max-width: 1150px){
 
@@ -571,6 +597,12 @@
         display: block;
         font-size: 20px;
         margin-top: 10px;
+    }
+    .main_slider .item {
+        flex-direction: row;
+        align-items: inherit;
+        justify-content: space-between;
+        flex-wrap: inherit;
     }
 }
 @media only screen and (max-width: 991px){
@@ -679,6 +711,26 @@
     .about-page .about-info {
         padding-top: 0;
         padding-bottom: 20px;
+    }
+    .main_slider .item{
+        gap: 20px !important;
+        flex-wrap: wrap;
+        justify-content: inherit;
+    }
+    .main_slider .item .item-inner{
+        width: calc(50% - 10px) !important;
+    }
+    .main_slider .item .item-inner:last-child{
+        width: 100% !important;
+    }
+    .main_slider .slider_link {
+        font-size: 23px;
+    }
+    .main_slider .item .item-inner:first-child .slider_img {
+        height: 375px;
+    }
+    .main_slider .item .item-inner:nth-child(2) .slider_img {
+        height: 375px;
     }
 }
 @media only screen and (max-width: 767px){
@@ -1282,6 +1334,31 @@
         left: -80px !important;
         margin-top: -140px;
         transform: scale(0.6);
+    }
+    .main_slider .slider_link {
+        font-size: 12px;
+    }
+    .main_slider {
+        height: inherit;
+    }
+    .main_slider .item .item-inner:last-child .slider_img img{
+        height: 285px;
+    }
+    .slider_content_wrapper{
+        padding-bottom: 0px;
+    }
+    .main_slider.owl-carousel .owl-nav button.owl-next svg, .main_slider.owl-carousel .owl-nav button.owl-prev svg {
+        width: 40px;
+        height: 85px;
+    }
+    .main_slider .item .item-inner:first-child .slider_img {
+        height: 180px;
+    }
+    .main_slider .item .item-inner:nth-child(2) .slider_img {
+        height: 180px;
+    }
+    .main_slider .item .item-inner:last-child .slider_img {
+        height: 285px;
     }
 }
 @media (max-width: 375.9px){

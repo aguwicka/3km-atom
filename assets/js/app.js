@@ -24,36 +24,44 @@ $(document).ready(function () {
 
 
   $('.main_slider').owlCarousel({
+    items: 1,
+    margin: 20,
     loop: true,
     dots: false,
     nav: true,
     navText: [
-      "<div class='custom-prev'><svg xmlns='http://www.w3.org/2000/svg' width='29' height='52' viewBox='0 0 29 52' fill='none'><path d='M27 2L4 26.4211L27 50' stroke='#E62900' stroke-width='5'/></svg></div>",
-      "<div class='custom-next'><svg xmlns='http://www.w3.org/2000/svg' width='29' height='52' viewBox='0 0 29 52' fill='none'><path d='M27 2L4 26.4211L27 50' stroke='#E62900' stroke-width='5'/></svg></div>"
+      `<div class='custom-prev'><svg width="84" height="85" viewBox="0 0 84 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="42" cy="42.1453" r="39.75" stroke="#E62900" stroke-width="4.5"/>
+<path d="M48 22.6453L29.5019 41.8548C28.9426 42.4357 28.9426 43.3549 29.5019 43.9357L48 63.1453" stroke="#E62900" stroke-width="4.5" stroke-linecap="round"/>
+</svg></div>`,
+      `<div class='custom-next'><svg width="84" height="85" viewBox="0 0 84 85" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="42" cy="42" r="39.75" transform="matrix(-1 0 0 1 84 0.145264)" stroke="#E62900" stroke-width="4.5"/>
+<path d="M36 22.6453L54.4981 41.8548C55.0574 42.4357 55.0574 43.3549 54.4981 43.9357L36 63.1453" stroke="#E62900" stroke-width="4.5" stroke-linecap="round"/>
+</svg></div>`
     ],
-    responsive: {
-      0: {
-        items: 2,
-        margin: 20,
-      },
-      420: {
-        items: 2,
-        margin: 20,
-      },
-      720: {
-        items: 2,
-        margin: 20,
-      },
-      1024: {
-        items: 3,
-        margin: 50,
-      },
-      1500: {
-        items: 3,
-        margin: 100,
-      },
+    // responsive: {
+    //   0: {
+    //     items: 2,
+    //     margin: 20,
+    //   },
+    //   420: {
+    //     items: 2,
+    //     margin: 20,
+    //   },
+    //   720: {
+    //     items: 2,
+    //     margin: 20,
+    //   },
+    //   1024: {
+    //     items: 3,
+    //     margin: 50,
+    //   },
+    //   1500: {
+    //     items: 3,
+    //     margin: 100,
+    //   },
 
-    }
+    // }
   });
 
   $('.cards-owl').owlCarousel({
