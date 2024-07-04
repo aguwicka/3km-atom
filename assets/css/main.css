@@ -7495,3 +7495,6 @@ input {
 .frezer.specific::before, .frezer.specific::after{
     display: none;
 }
+.card-grid-frezer .card-item:last-child{
+    padding-top: 125px;
+}

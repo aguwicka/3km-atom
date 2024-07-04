@@ -289,6 +289,16 @@
         width: 84px;
         height: 85px;
     }
+    .card-grid-frezer .card-item:last-child {
+        padding-top: 93px;
+    }
+    .bg-black .card-grid-frezer .card-item ol li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .bg-black .card-grid-frezer .card-item ol li::before{
+        top: 11px;
+    }
 }
 @media only screen and (max-width: 1350px){
     .usefull_image img {
@@ -612,6 +622,10 @@
         justify-content: space-between;
         flex-wrap: inherit;
     }
+    .card-grid-frezer{
+        display: grid !important;
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width: 991px){
     .frezer-about-info-dop .about-title-text p {
@@ -739,6 +753,10 @@
     }
     .main_slider .item .item-inner:nth-child(2) .slider_img {
         height: 375px;
+    }
+    .card-grid-frezer {
+        margin-top: 60px;
+        margin-bottom: -30px;
     }
 }
 @media only screen and (max-width: 767px){
@@ -1377,6 +1395,35 @@
     }
     .drob_solutin_wrapper{
         background-attachment: inherit;
+    }
+    .card-grid-frezer {
+        margin-top: 40px;
+        grid-template-columns: none;
+        gap: 20px;
+        margin-bottom: 20px;
+    }
+    .bg-black .card-grid-frezer .card-item{
+        border-radius: 20px;
+    }
+    .bg-black .card-grid-frezer .card-item h2 span{
+        font-size: 20px;
+        line-height: 21px;
+    }
+    .bg-black .card-grid-frezer .card-item h2{
+        margin-bottom: 10px;
+    }
+    .bg-black .card-grid-frezer .card-item p {
+        margin-top: 10px;
+    }
+    .card-grid-frezer .card-item ol {
+        margin: 10px 0 0 0;
+        padding-left: 15px;
+    }
+    .card-grid-frezer .card-item:last-child {
+        padding-top: 20px;
+    }
+    .bg-black .card-grid-frezer .card-item ol li::before{
+        left: -13px;
     }
 }
 @media (max-width: 375.9px){
