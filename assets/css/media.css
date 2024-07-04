@@ -1,5 +1,5 @@
 @media only screen and (max-width: 1750px){
-    .about-page .card-about-item.one img {
+    .about-page .card-about-item.one img, .card-about-item.one .card-about-item-vector {
         width: 65%;
     }
     .about-info .about-title h2 {
@@ -213,7 +213,7 @@
     .about-page .card-about-item.one {
         padding: 50px 20px 25px 20px;
     }
-    .about-page .card-about-item.one img {
+    .about-page .card-about-item.one img, .card-about-item.one .card-about-item-vector {
         right: -35px;
     }
     .about-page .card-about-item.two, .about-page .card-about-item.three {
@@ -248,14 +248,14 @@
         left: 20%;
         transform: none;
     }
-    .card-about-item.two::before, .card-about-item.two img {
+    .card-about-item.two::before, .card-about-item.two img, .card-about-item.two .card-about-item-vector {
         width: 50%;
         height: 100%;
         top: -50px;
         left: 45%;
         transform: inherit;
     }
-    .card-about-item.three::before, .card-about-item.three img {
+    .card-about-item.three::before, .card-about-item.three img, .card-about-item.three .card-about-item-vector {
         width: 35%;
         height: 100%;
         top: -40px;
@@ -316,6 +316,14 @@
     }
     .main_slider .item .item-inner:last-child .slider_img {
         height: 350px;
+    }
+    .frezer.specific .usefull_image img{
+        height: 705px;
+        width: 775px;
+        bottom: -55px;
+    }
+    .frezer.specific {
+        margin-bottom: 80px;
     }
 }
 @media only screen and (max-width: 1300px){
@@ -496,14 +504,14 @@
         color: #ABABAB;
         margin-top: 15px;
     }
-    .about-page .card-about-item.two::before, .about-page .card-about-item.two img {
+    .about-page .card-about-item.two::before, .about-page .card-about-item.two img, .about-page .card-about-item.two .card-about-item-vector {
         width: 45%;
         height: 100%;
         top: -50px;
         left: 45%;
         transform: inherit;
     }
-    .about-page .card-about-item.three::before, .about-page .card-about-item.three img {
+    .about-page .card-about-item.three::before, .about-page .card-about-item.three img, .about-page .card-about-item.three .card-about-item-vector {
         width: 30%;
         height: 100%;
         top: -40px;
@@ -1241,6 +1249,10 @@
     .about-page .card-about-item.one img {
         width: 75%;
     }
+    .card-about-item.one .card-about-item-vector{
+        width: 60%;
+        right: -10px;
+    }
     .about-page .box-about, .about-page .card-about-left {
         gap: 10px;
     }
@@ -1248,14 +1260,14 @@
         width: calc(50% - 21px) !important;
         padding: 35px 8px 12px 8px;
     }
-    .about-page .card-about-item.two::before, .about-page .card-about-item.two img {
+    .about-page .card-about-item.two::before, .about-page .card-about-item.two img, .about-page .card-about-item.two .card-about-item-vector {
         width: 45%;
         height: 50%;
         top: 0;
         left: 45%;
         transform: inherit;
     }
-    .about-page .card-about-item.three::before, .about-page .card-about-item.three img {
+    .about-page .card-about-item.three::before, .about-page .card-about-item.three img, .about-page .card-about-item.three .card-about-item-vector{
         width: 30%;
         height: 45%;
         top: 3px;
@@ -1359,6 +1371,12 @@
     }
     .main_slider .item .item-inner:last-child .slider_img {
         height: 285px;
+    }
+    .frezer-about-info-dop .about-title-block {
+        gap: 10px;
+    }
+    .drob_solutin_wrapper{
+        background-attachment: inherit;
     }
 }
 @media (max-width: 375.9px){
