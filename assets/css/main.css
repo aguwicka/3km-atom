@@ -7498,3 +7498,125 @@ input {
 .card-grid-frezer .card-item:last-child{
     padding-top: 125px;
 }
+.modal-wrap {
+    display: none;
+}
+.modal-request{
+    padding: 40px 45px;
+    width: 735px;
+}
+.modal-request__title{
+    text-align: center;
+    margin-bottom: 15px;
+    font-family: Gilroy;
+    font-size: 45px;
+    font-weight: 600;
+}
+.modal-request__text{
+    text-align: center;
+    margin-bottom: 35px;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+}
+.modal-request__form{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.modal-request .input-group{
+    min-width: inherit !important;
+    max-width: inherit !important; 
+    width: 100% !important;
+}
+.modal-request__input{
+    border: 1px solid #676E7C;
+    border-radius: 10px;
+    color: #676E7C;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 19px 32px;
+    width: 100% !important;
+    margin: 0;
+    outline: none;
+}
+.modal-request #phone-input{
+    padding-left: 70px;
+}
+.modal-request .flag{
+    width: 30px;
+    height: 24px;
+    top: 20px;
+}
+.modal-request .flag img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.modal-request__textarea{
+    border: 1px solid #676E7C;
+    border-radius: 10px;
+    color: #676E7C;
+    font-size: 19px;
+    font-weight: 400;
+    padding: 19px 32px;
+    width: 100%;
+    height: 115px;
+    margin: 0;
+    outline: none;
+}
+.modal-request__submit{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    background: #E62900;
+    margin: 0;
+}
+.modal-request__confluence{
+    font-family: Gilroy;
+    color: #1A1A1A;
+    font-size: 15px;
+    font-weight: 500;
+    text-align: center;
+}
+.modal-request__confluence a{
+    font-family: Gilroy;
+    color: #1A1A1A;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.modal-request__file span{
+    font-family: Gilroy;
+    color: #060606;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    margin-bottom: 15px;
+}
+.modal-request__file label input {
+    display: none;
+}
+.modal-request__file label p{
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 17px 52px;
+    background: #E62900;
+    border-radius: 10px;
+    width: fit-content;
+    cursor: pointer;
+}
+.red .content-block{
+    display: flex;
+}
+.about-info.tb-bg .header_form_button{
+    display: flex;
+    width: fit-content;
+}

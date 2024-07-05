@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
   const mask = IMask(phoneInput, maskOptions);
 });
 
+
 $(document).ready(function () {
+
+  $(" .modal-request #phone-input").inputmask("+7 (999) 999-99-99")
 
   $('.menu_btn').click(function () {
     $('.header_menus_mob').toggleClass('active');
@@ -104,5 +107,10 @@ $(document).ready(function () {
       },
 
     }
+  });
+
+  $("form input[type=file]").change(function(){
+      let filename = $(this).val().replace(/.*\\/, "");
+      $(this).closest('form').find('label p').text(filename);
   });
 });

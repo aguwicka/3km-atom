@@ -6,6 +6,7 @@
     <title>index</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/media.css">
@@ -46,7 +47,7 @@
                 </div>
                 <div class="header_buttons">
                     <a href="" class="header_number">+7 (495) 902-68-32</a>
-                    <a href="" class="header_form_button">Оставить заявку</a>
+                    <a href="" class="header_form_button" data-fancybox data-src="#modal-request" href="javascript:;">Оставить заявку</a>
                 </div>
             </header>
             <div class="header_shadow"></div>
@@ -303,6 +304,31 @@
             </div>
         </footer>
     </div>
+    <div class="modal-wrap">
+        <div class='modal-request' id="modal-request">
+             <div class="modal-request__title">Оставить заявку</div>
+             <div class="modal-request__text">Оставьте заявку, и мы свяжемся с вами, <br>чтобы обсудить все ваши вопросы</div>
+             <form class="modal-request__form">
+                  <input class="modal-request__input" type="text" placeholder="Ваше имя">
+                  <div class="input-group">
+                      <div class="flag"><img src="assets/img/russia_flag.svg" alt=""></div>
+                      <input type="text" class="modal-request__input" id="phone-input" placeholder="+7 (999) 999-99-99">
+                  </div>
+                  <textarea class='modal-request__textarea' name="message"></textarea>
+                  <div class="modal-request__file form-file">
+                       <span>Прикрепить файл</span>
+                       <label>
+                         <input type="file">
+                         <p>Загрузить файл</p>
+                       </label>
+                  </div>
+                  <input class="modal-request__submit" type="submit" value="Отправить">
+                  <div class="modal-request__confluence">
+                       Нажимая на кнопку, вы соглашаетесь с<br> <a href="">политикой конфиденциальности</a>
+                  </div>
+             </form>
+        </div>
+   </div>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/imask@7.6.1/dist/imask.js"></script>
@@ -327,6 +353,8 @@
     }
 })
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.9/jquery.inputmask.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="assets/js//app.js"></script>
 </body>
 </html>

@@ -758,6 +758,9 @@
         margin-top: 60px;
         margin-bottom: -30px;
     }
+    .modal-request{
+        width: 100%;
+    }
 }
 @media only screen and (max-width: 767px){
     .card-front, .card-back, .front-8 {
@@ -1424,6 +1427,46 @@
     }
     .bg-black .card-grid-frezer .card-item ol li::before{
         left: -13px;
+    }
+    .modal-request {
+        padding: 30px;
+    }
+    .modal-request__title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .modal-request__text {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .modal-request__input{
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+    .modal-request .flag {
+        top: 13px;
+        left: 15px;
+    }
+    .modal-request #phone-input {
+        padding-left: 50px;
+    }
+    .modal-request__textarea{
+        padding: 10px 15px;
+        height: 90px;
+    }
+    .modal-request__file span{
+        font-size: 14px;
+    }
+    .modal-request__file label p{
+        font-size: 14px;
+        padding: 5px 20px;
+    }
+    .modal-request__submit{
+        height: 60px;
+        font-size: 16px;
+    }
+    .modal-request__confluence, .modal-request__confluence a{
+        font-size: 13px;
     }
 }
 @media (max-width: 375.9px){
